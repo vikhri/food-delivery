@@ -1,20 +1,365 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 <header>
-    <h1>Webpack</h1>
+    <div class="wrapper">
+        <div class="header-navigation">
+            <img class="header-navigation__logo logo" src="" alt="logo">
+            <ul class="header-navigation__menu menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Service</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Top cities</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Contract</a>
+                </li>
+            </ul>
+            <div class="navigation__toolbar toolbar">
+                <ul class="toolbar__list">
+                    <li class="toolbar__item">
+                        <a class="toolbar__link" href="">Search</a>
+                    </li>
+                    <li class="toolbar__item">
+                        <a class="toolbar__link" href="">Cart</a>
+                    </li>
+                    <li class="toolbar__item">
+                        <button type="button" class="toolbar__button button">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </header>
 <main>
-    <h2>Webpack</h2>
-    <p>
-        <img src="./img/istockphoto-872624550-612x612.jpg" alt="123">
-    </p>
-    <h2>Webpack</h2>
-</main>
+    <section class="intro">
+        <div class="wrapper">
+            <div class="two-column-block two-column-block--intro">
+                <img class="two-column-block__illustration two-column-block__illustration--intro" src="" alt="">
+                <div class="two-column-block__description two-column-block__description--intro description">
+                    <h1 class="description__title title">super fast Food delivery service</h1>
+                    <p class="description__text">
+                        We provide super fast-delivery service. Let’s use our services right now and get discounts of up to 50%.
+                    </p>
+                </div>
+                <ul class="descriptions__links">
+                    <li class="description__item">
+                        <a class="description__link" href=""></a>
+                    </li>
+                    <li class="description__item">
+                        <a class="description__link" href=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="popular">
+        <div class="wrapper">
+            <h2 class="popular__title section-title">Our popular Category</h2>
+            <ul class="popular__filer popular-filter">
+                <li class="popular-filter__item popular-filter__item--burger">Burger</li>
+                <li class="popular-filter__item popular-filter__item--sandwich">Sandwich</li>
+                <li class="popular-filter__item popular-filter__item--asian">Asian Food</li>
+                <li class="popular-filter__item popular-filter__item--set">Set Menu</li>
+            </ul>
+            <ul class="popular__cards popular-cards">
+                <li class="popular-cards__item popular-card">
+                    <img class="popular-card__image" src="" alt="">
+                    <p class="popular-card__rating">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </p>
+                    <p class="popular-card__name">Cheeseburger</p>
+                    <p class="popular-card__price">115$</p>
+                    <button class="popular-card__button button" type="button">Add to card</button>
+                </li>
+                <li class="popular-cards__item popular-card">
+                    <img class="popular-card__image" src="" alt="">
+                    <p class="popular-card__rating">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </p>
+                    <p class="popular-card__name">Cheeseburger</p>
+                    <p class="popular-card__price">115$</p>
+                    <button class="popular-card__button button" type="button">Add to card</button>
+                </li>
+                <li class="popular-cards__item popular-card">
+                    <img class="popular-card__image" alt="" src="">
+                    <p class="popular-card__rating">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </p>
+                    <p class="popular-card__name">Cheeseburger</p>
+                    <p class="popular-card__price">115$</p>
+                    <button class="popular-card__button button" type="button">Add to card</button>
+                </li>
+                <li class="popular-cards__item popular-card">
+                    <img class="popular-card__image" src="" alt="">
+                    <p class="popular-card__rating">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </p>
+                    <p class="popular-card__name">Cheeseburger</p>
+                    <p class="popular-card__price">115$</p>
+                    <button class="popular-card__button button" type="button">Add to card</button>
+                </li>
+                <li class="popular-cards__item popular-card">
+                    <img class="popular-card__image" alt="" src="">
+                    <div class="popular-card__rating">
+                        <span class="popular-card__star"></span>
+                        <span class="popular-card__star"></span>
+                        <span class="popular-card__star"></span>
+                        <span class="popular-card__star"></span>
+                        <span class="popular-card__star"></span>
+                    </div>
+                    <p class="popular-card__name">Cheeseburger</p>
+                    <p class="popular-card__price">115$</p>
+                    <button class="popular-card__button button" type="button">Add to card</button>
+                </li>
+            </ul>
+            <div class="popular__slider popular-slider">
+                <button class="popular-slider__button popular-slider__button--previous" type="button">Предыдущие</button>
+                <span class="popular-slider__point popular-slider__point--current"></span>
+                <span class="popular-slider__point"></span>
+                <span class="popular-slider__point"></span>
+                <span class="popular-slider__point"></span>
+                <button class="popular-slider__button popular-slider__button--next" type="button">Следующие</button>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="wrapper">
+            <div class="two-column-block two-column-block--advantages">
+                <img class="two-column-block__illustration two-column-block__illustration--advantages " alt="" src="">
+                <div class="two-column-block__description two-column-block__description--advantages description">
+                    <h2 class="description__title section-title">Stay at home, we will Provide good food</h2>
+                    <p class="description__text">
+                        We provide super fast-delivery service. Let’s use our services right now and get discounts of up
+                        to 50%.
+                    </p>
+                    <ul class="description__list description-list">
+                        <li class="description-list__item description-list__item--speed">fasted delivery in 30 Minutes</li>
+                        <li class="description-list__item description-list__item--men">300+ delivery men</li>
+                        <li class="description-list__item description-list__item--restaurants">500+ restaurant & cafe shop</li>
+                    </ul>
+                </div>
+                <ul class="descriptions__links">
+                    <li class="description__item">
+                        <a class="description__link" href="">See more</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="restaurants">
+        <div class="wrapper">
+            <h2 class="restaurants__title section-title">Top Food restaurant</h2>
+            <ul class="restaurants__list restaurants-list">
+                <li class="restaurants-list__item restaurant">
+                    <img class="restaurant__image" src="" alt="">
+                    <p class="restaurant__name">Restaurant 1</p>
+                    <p class="restaurant__hours">11.00 AM - 10.00 PM
+                    <a class="restaurant__link" href="#"></a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="app">
+        <div class="wrapper">
+            <div class="two-column-block two-column-block--app">
+                <img class="two-column-block__illustration two-column-block__illustration--app " alt="" src="">
+                <div class="two-column-block__description two-column-block__description--app description">
+                    <h2 class="description__title section-title">Download app</h2>
+                    <p class="description__text">
+                        It's all at your fingertips -- the restaurants you love. Find the right food to suit your mood, and make the first bite last. Go ahead, download app and get 50% discount
+                    </p>
+                </div>
+                <ul class="descriptions__links descriptions__links--app">
+                    <li class="description__item description__item--app">
+                        <a class="description__link" href="">See more</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="wrapper">
+            <div class="reviews__content">
+                <img class="reviews__photo" alt="" src="">
+                <div class="reviews__quote-section quote-section">
+                    <p class="quote-section__text">EFood has the most intriguing food order system in the country. UI in both their app and web Is very simple and easy to use, enhancing the UX. Their delivery men are also quite professional and knows the neighborhood well. Till now, I never had to guide them to my address for delivery; </p>
+                    <div class="quote-section__author author">
+                        <p class="author__name"> Angelina Jo</p>
+                        <p class="author__about">Food lover</p>
+                    </div>
+                    <div class="quote-section__buttons quote-buttons">
+                        <button class="quote-buttons__previous" type="button">Предыдущий комментарий</button>
+                        <button class="quote-buttons__next" type="button">Следующий комментарий</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscription">
+        <div class="wrapper">
+            <div class="subscription__content">
+                <h2 class="subscription__title section-title">Subscribe to get the Latest Offer</h2>
+                <p class="subscription__text">Get our daily updates by subscribing to our newspaper, please drop your email below</p>
+                <form class="subscription__form subscription-form">
+                    <label for="email">
+                        <input class="subscription-form__input" type="email" name="email" id="email">
+                    </label>
+                    <button class="subscription-form__button button" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
 
+    </section>
+</main>
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer__navigation footer-navigation">
+            <div class="footer-navigation__contacts contacts">
+                <a class="contacts__link"><img class="footer-navigation__logo logo" src="" alt=""></a>
+                <p class="contacts__address"></p>
+                <p class="contacts__email"></p>
+                <p class="contacts__address"></p>
+                <ul class="contacts__socials socials">
+                    <li class="socials__item socials__item--facebook">
+                        <a class="socials--link" href=""> </a>
+                    </li>
+                    <li class="socials__item socials__item--twitter">
+                        <a class="socials--link" href=""> </a>
+                    </li>
+                    <li class="socials__item socials__item--instagram">
+                        <a class="socials--link" href=""> </a>
+                    </li>
+                    <li class="socials__item socials__item--pinterest">
+                        <a class="socials--link" href=""> </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="footer-navigation__sitemap sitemap">
+                <li class="sitemap__category sitemap-category">
+                    Service
+                    <ul class="sitemap-category__list">
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">How ir works</a>
+                        </li>
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">How ir works</a>
+                        </li>
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">How ir works</a>
+                        </li>
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">How ir works</a>
+                        </li>
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">How ir works</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sitemap__category sitemap-category">
+                    Company
+                    <ul class="sitemap-category__list">
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">About us</a>
+                        </li>
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">About us</a>
+                        </li>
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">About us</a>
+                        </li>
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">About us</a>
+                        </li>
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">About us</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sitemap__category sitemap-category">
+                    Supports
+                    <ul class="sitemap-category__list">
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">Help center</a>
+                        </li>
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">Help center</a>
+                        </li>
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">Help center</a>
+                        </li>
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">Help center</a>
+                        </li>
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">Help center</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sitemap__category sitemap-category">
+                    Resources
+                    <ul class="sitemap-category__list">
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">Blog</a>
+                        </li>
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">Blog</a>
+                        </li>
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">Blog</a>
+                        </li>
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">Blog</a>
+                        </li>
+                        <li class="sitemap-category__item category-item">
+                            <a class="category-item__link" href="">Blog</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__legal legal">
+        <div class="wrapper">
+            <p class="legal__copyright">© 2021 EFood - All rights reserved.</p>
+            <ul class="legal__documents legal-documents">
+                <li class="legal-documents__item">
+                    <a class="legal-documents__link" href="">Privacy</a>
+                </li>
+                <li class="legal-documents__item">
+                    <a class="legal-documents__link" href="">Security</a>
+                </li>
+                <li class="legal-documents__item">
+                    <a class="legal-documents__link" href="">Terms</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
