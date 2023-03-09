@@ -1,0 +1,25 @@
+@import url('helpers/normalize.css');
+@import url('helpers/fonts.css');
+@import url('blocks/header.css');
+
+
+body {
+    background-color: #E5E5E5;
+
+}
+
+.page {
+    padding-top: 50px;
+    padding-bottom: 36px;
+}
+
+.wrapper {
+    padding: 0 135px;
+    max-width: 1440px;
+}
+
+
+
+
+
+

@@ -42,13 +42,21 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: [
-                    devMode ? "style-loader" : MiniCssExtractPlugin.loader,
+                    "style-loader",
                     "css-loader",
                     {
                         loader: 'postcss-loader',
                         options: {
                             postcssOptions: {
-                                plugins: [require('postcss-preset-env')],
+                                plugins: [
+                                    require('postcss-mixins'),
+                                    require('postcss-preset-env'),
+                                    require('postcss-simple-vars'),
+                                    require('autoprefixer'),
+                                    require('postcss-nested'),
+                                    require('postcss-import'),
+
+                                ],
                             }
                         }
                     }
