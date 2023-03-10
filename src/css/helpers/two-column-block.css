@@ -1,0 +1,38 @@
+.two-column-block {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+
+    &__illustration {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &__description {
+        padding: 150px 0;
+        max-width: 515px;
+    }
+
+
+}
+
+.description {
+
+
+    &__title,
+    &__text,
+    &__links {
+        margin-bottom: 30px;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        list-style: none;
+        text-decoration: none;
+
+    }
+}

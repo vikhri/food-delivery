@@ -1,21 +1,27 @@
 @import url('helpers/normalize.css');
 @import url('helpers/fonts.css');
 @import url('blocks/header.css');
-
-
-body {
-    background-color: #E5E5E5;
-
-}
+@import url('helpers/typo.css');
+@import url('helpers/two-column-block.css');
+@import url('blocks/intro.css');
 
 .page {
+
     padding-top: 50px;
     padding-bottom: 36px;
+
+    background-color: #E5E5E5;
+    margin: 0 auto;
+
+    &__header {
+        margin-bottom: 50px;
+    }
 }
 
 .wrapper {
     padding: 0 135px;
     max-width: 1440px;
+    margin: auto;
 }
 
 

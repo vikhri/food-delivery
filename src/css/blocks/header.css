@@ -5,7 +5,10 @@
     /* Блочная модель */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    column-gap: 60px;
+    row-gap: 15px;
+
     width: 100%;
     min-height: 50px;
 
@@ -20,27 +23,35 @@
 
 .header-navigation {
 
+    &__logo {
+        margin-right: auto;
+    }
+
     &__menu {
 
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
-        min-width: 450px;
+        gap: 60px;
+        max-width: 450px;
 
         list-style: none;
     }
 
+    a {
+        text-decoration: none;
+    }
 }
 
 .toolbar__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 60px;
     align-items: center;
-    min-width: 290px;
+    max-width: 290px;
     height: 100%;
 
     list-style: none;
 }
+
