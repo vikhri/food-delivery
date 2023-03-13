@@ -1,21 +1,30 @@
+@import url('helpers/variables.css');
 @import url('helpers/normalize.css');
 @import url('helpers/fonts.css');
 @import url('blocks/header.css');
 @import url('helpers/typo.css');
 @import url('helpers/two-column-block.css');
 @import url('blocks/intro.css');
+@import url('blocks/popular.css');
+@import url('blocks/advantages.css');
+@import url('blocks/top.css');
+
+
 
 .page {
+
 
     padding-top: 50px;
     padding-bottom: 36px;
 
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
     margin: 0 auto;
 
     &__header {
         margin-bottom: 50px;
     }
+
+
 }
 
 .wrapper {

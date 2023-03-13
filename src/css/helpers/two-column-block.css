@@ -13,12 +13,9 @@
         padding: 150px 0;
         max-width: 515px;
     }
-
-
 }
 
 .description {
-
 
     &__title,
     &__text,
@@ -33,6 +30,5 @@
 
         list-style: none;
         text-decoration: none;
-
     }
 }
