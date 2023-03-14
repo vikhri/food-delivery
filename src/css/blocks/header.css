@@ -16,12 +16,15 @@
     font-family: 'Rubik', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 1.15;
+    color: $main-color;
 
     /* Оформление */
 
 }
 
 .header-navigation {
+
+
 
     &__logo {
         margin-right: auto;

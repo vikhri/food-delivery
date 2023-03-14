@@ -4,18 +4,50 @@
     grid-template-columns: 25% 75%;
     padding-bottom: 30px;
 
+   &__contacts {
 
-    &__sitemap {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       height: 100%;
+
+    }
+
+   &__sitemap {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 100px;
-    }
+
+       font-size: 18px;
+       line-height: 1.12;
+       color: #37383D;
+
+       list-style: none;
+   }
 }
 
-.sitemap,
-.sitemap-category__list,
 .socials {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 100%;
+
     list-style: none;
+
+    &__item {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+
+        background-color: #eeeeef;
+    }
 }
 
 
@@ -27,6 +59,7 @@
 
    &__title {
     margin-bottom: 10px;
+    font-weight: 500;
    }
 
    &__item {
@@ -36,9 +69,17 @@
     padding: 13px 0;
    }
 
+    &__link {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 .legal {
+
+    font-size: 14px;
+    line-height: 1;
+    color: #646464;
 
     border-top: 1px solid #969696;
 
@@ -53,7 +94,45 @@
         display: flex;
         flex-direction: row;
         gap: 50px;
-
-        list-style: none;
     }
+}
+
+.legal-documents {
+
+    list-style: none;
+
+    &__link {
+        text-decoration: none;
+    }
+}
+
+.contacts {
+
+    font-size: 16px;
+    line-height: 1.25;
+
+    &__link {
+        margin-bottom: 5px;
+    }
+
+    p {
+        padding-left: 30px;
+        height: 20px;
+
+
+    }
+
+    &__address {
+        @mixin icon address;
+    }
+
+    &__phone {
+         @mixin icon phone;
+    }
+    &__email {
+      @mixin icon email;
+    }
+
+
+
 }
