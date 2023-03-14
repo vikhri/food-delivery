@@ -8,6 +8,10 @@
 @import url('blocks/popular.css');
 @import url('blocks/advantages.css');
 @import url('blocks/top.css');
+@import url('blocks/app.css');
+@import url('blocks/review.css');
+@import url('blocks/subscription.css');
+@import url('blocks/footer.css');
 
 
 
@@ -23,8 +27,6 @@
     &__header {
         margin-bottom: 50px;
     }
-
-
 }
 
 .wrapper {

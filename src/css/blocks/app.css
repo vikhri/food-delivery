@@ -1,0 +1,7 @@
+.app {
+    padding: 150px 0;
+}
+
+.two-column-block--app img {
+    order: 2;
+}

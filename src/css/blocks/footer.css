@@ -1,0 +1,59 @@
+.footer-navigation {
+
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding-bottom: 30px;
+
+
+    &__sitemap {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 100px;
+    }
+}
+
+.sitemap,
+.sitemap-category__list,
+.socials {
+    list-style: none;
+}
+
+
+.sitemap-category {
+
+    &__list {
+        list-style: none;
+    }
+
+   &__title {
+    margin-bottom: 10px;
+   }
+
+   &__item {
+    font-size: 18px;
+    line-height: 1.2;
+
+    padding: 13px 0;
+   }
+
+}
+
+.legal {
+
+    border-top: 1px solid #969696;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 26px 0 36px;
+    }
+
+    &__documents {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+
+        list-style: none;
+    }
+}

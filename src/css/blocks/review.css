@@ -1,0 +1,70 @@
+.reviews {
+    margin-bottom: 124px;
+
+}
+
+.reviews__content {
+    display: grid;
+    grid-template-columns: 37% 63%;
+
+    img {
+        width: 433px;
+        height: 520px;
+
+        border-radius: 24px;
+        object-fit: cover;
+        background-color: aqua;
+    }
+
+}
+
+.reviews__title {
+    text-align: center;
+    margin-bottom: 67px;
+}
+
+.quote-section {
+    padding-left: 144px;
+    width: 100%;
+
+    &__text {
+        padding: 65px 0 74px;
+     }
+
+    &__switcher {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+     }
+
+    &__author {
+          min-width: 120px;
+
+         .author__name {
+            font-size: 20px;
+            line-height: 1.15;
+             color: $secondary-color;
+             margin-bottom: 18px;
+         }
+
+         .author__about {
+             font-size: 14px;
+             line-height: 1.2;
+             color: $light-color;
+         }
+     }
+}
+
+.quote-buttons {
+     width: 108px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+
+    button {
+        size: 32px;
+        border: none;
+        background: none;
+    }
+
+}

@@ -223,7 +223,6 @@
                         <a class="restaurant__link" href="#"></a>
                 </div>
             </li>
-
             </ul>
         </div>
     </section>
@@ -232,32 +231,45 @@
             <div class="two-column-block two-column-block--app">
                 <img class="two-column-block__illustration two-column-block__illustration--app " alt="" src="./img/decoration/app.png">
                 <div class="two-column-block__description two-column-block__description--app description">
-                    <h2 class="description__title section-title">Download app</h2>
+                    <h2 class="description__title section-title">Download our mobile app</h2>
                     <p class="description__text">
                         It's all at your fingertips -- the restaurants you love. Find the right food to suit your mood, and make the first bite last. Go ahead, download app and get 50% discount
                     </p>
+                    <ul class="description__links description__links--app">
+                        <li class="description__item description__item--app">
+                            <a class="description__link" href="">See more</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="description__links description__links--app">
-                    <li class="description__item description__item--app">
-                        <a class="description__link" href="">See more</a>
-                    </li>
-                </ul>
             </div>
         </div>
     </section>
     <section class="reviews">
         <div class="wrapper">
+            <h2 class="section-title reviews__title">What Our Client Are Saying </h2>
             <div class="reviews__content">
-                <img class="reviews__photo" alt="" src="./img/review-authors/angelina.png">
+                <img class="reviews__photo" alt="" width="433" height="520" src="./img/review-authors/angelina.png">
                 <div class="reviews__quote-section quote-section">
-                    <p class="quote-section__text">EFood has the most intriguing food order system in the country. UI in both their app and web Is very simple and easy to use, enhancing the UX. Their delivery men are also quite professional and knows the neighborhood well. Till now, I never had to guide them to my address for delivery; </p>
-                    <div class="quote-section__author author">
-                        <p class="author__name"> Angelina Jo</p>
-                        <p class="author__about">Food lover</p>
-                    </div>
-                    <div class="quote-section__buttons quote-buttons">
-                        <button class="quote-buttons__previous" type="button">Предыдущий комментарий</button>
-                        <button class="quote-buttons__next" type="button">Следующий комментарий</button>
+                    <p class="quote-section__text quote">EFood has the most intriguing food order system in the country. UI in both their app and web Is very simple and easy to use, enhancing the UX. Their delivery men are also quite professional and knows the neighborhood well. Till now, I never had to guide them to my address for delivery; </p>
+                    <div class="quote-section__switcher">
+                        <div class="quote-section__author author">
+                              <p class="author__name"> Angelina Jo</p>
+                              <p class="author__about">Food lover</p>
+                         </div>
+                        <div class="quote-section__buttons quote-buttons">
+                            <button class="quote-buttons__previous" type="button">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27 16H5" stroke="#7B7B7B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14 7L5 16L14 25" stroke="#7B7B7B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <button class="quote-buttons__next" type="button">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 16H27" stroke="#FF7A50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18 7L27 16L18 25" stroke="#FF7A50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -270,7 +282,7 @@
                 <p class="subscription__text">Get our daily updates by subscribing to our newspaper, please drop your email below</p>
                 <form class="subscription__form subscription-form">
                     <label for="email">
-                        <input class="subscription-form__input" type="email" name="email" id="email">
+                        <input class="subscription-form__input" type="email" name="email" id="email" placeholder="Enter your email addres">
                     </label>
                     <button class="subscription-form__button button" type="submit">Subscribe</button>
                 </form>
@@ -304,7 +316,7 @@
             </div>
             <ul class="footer-navigation__sitemap sitemap">
                 <li class="sitemap__category sitemap-category">
-                    Service
+                    <p class="sitemap-category__title">Service</p>
                     <ul class="sitemap-category__list">
                         <li class="sitemap-category__item category-item">
                             <a class="category-item__link" href="">How ir works</a>
@@ -324,7 +336,7 @@
                     </ul>
                 </li>
                 <li class="sitemap__category sitemap-category">
-                    Company
+                    <p class="sitemap-category__title">Service</p>
                     <ul class="sitemap-category__list">
                         <li class="sitemap-category__item category-item">
                             <a class="category-item__link" href="">About us</a>
@@ -344,7 +356,7 @@
                     </ul>
                 </li>
                 <li class="sitemap__category sitemap-category">
-                    Supports
+                    <p class="sitemap-category__title">Service</p>
                     <ul class="sitemap-category__list">
                         <li class="sitemap-category__item category-item">
                             <a class="category-item__link" href="">Help center</a>
@@ -364,7 +376,7 @@
                     </ul>
                 </li>
                 <li class="sitemap__category sitemap-category">
-                    Resources
+                    <p class="sitemap-category__title">Service</p>
                     <ul class="sitemap-category__list">
                         <li class="sitemap-category__item category-item">
                             <a class="category-item__link" href="">Blog</a>
@@ -388,6 +400,7 @@
     </div>
     <div class="footer__legal legal">
         <div class="wrapper">
+            <div class="legal__content">
             <p class="legal__copyright">© 2021 EFood - All rights reserved.</p>
             <ul class="legal__documents legal-documents">
                 <li class="legal-documents__item">
@@ -400,6 +413,7 @@
                     <a class="legal-documents__link" href="">Terms</a>
                 </li>
             </ul>
+            </div>
         </div>
     </div>
 </footer>

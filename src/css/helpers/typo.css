@@ -1,6 +1,6 @@
 @define-mixin main-font {
     font-family: 'Rubik', 'Arial', sans-serif;
-    color: #363853;
+    color: $main-color;
     font-size: 20px;
 }
 
@@ -11,12 +11,22 @@
 h1 {
     @mixin main-font;
     text-transform: capitalize;
+    font-weight: 500;
     font-size: 66px;
+
 }
 
 h2 {
     @mixin main-font;
     text-transform: capitalize;
+    font-weight: 500;
     font-size: 36px;
+}
+
+.quote {
+    @mixin main-font;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 45px;
 }
 
