@@ -2,3 +2,11 @@
     order: 2;
 }
 
+.button--intro {
+    min-width: 162px;
+    min-height: 50px;
+}
+
+.link--intro {
+    color: $main-color;
+}

@@ -1,6 +1,12 @@
-/*font-colors*/
+/* font-colors */
 
 $main-color: #363853;
 $secondary-color: #FF7a50;
 $light-color: #aaaaaa;
 
+/*icon upload */
+@define-mixin icon $name {
+    background-image: url("./../img/icons/$name.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}

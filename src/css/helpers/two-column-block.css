@@ -27,8 +27,10 @@
         display: flex;
         flex-direction: row;
         gap: 30px;
+        align-items: center;
 
         list-style: none;
         text-decoration: none;
     }
+
 }

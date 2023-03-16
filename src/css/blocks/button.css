@@ -9,10 +9,11 @@
 
 
     color: #ffffff;
+    text-decoration: none;
 
     background-color: $secondary-color;
     border: none;
     border-radius: 5px;
-
+    box-shadow: 0 22px 40px 0 rgba(255, 104, 56, 0.19);
 
 }

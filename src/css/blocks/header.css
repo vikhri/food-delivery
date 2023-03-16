@@ -47,14 +47,46 @@
     }
 }
 
-.toolbar__list {
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-    align-items: center;
-    max-width: 290px;
-    height: 100%;
+.toolbar {
 
-    list-style: none;
+    &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        align-items: center;
+        max-width: 290px;
+        height: 100%;
+
+        list-style: none;
+    }
+
+    &__button {
+        min-width: 120px;
+        min-height: 50px;
+    }
+
+    &__item--cart {
+        position: relative;
+    }
 }
 
+
+.cart-status {
+
+    position: absolute;
+    right: -6px;
+    top: -3px;
+
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;
+    font-size: 10px;
+    line-height: 1.2;
+
+    background-color: $secondary-color;
+    border-radius: 50%;
+}

@@ -1,9 +1,3 @@
-@define-mixin icon $name {
-    background-image: url("./../img/icons/$name.png");
-    background-repeat: no-repeat;
-    background-position: left;
-}
-
 
 .advantages-list {
     list-style: none;
@@ -27,7 +21,7 @@
             @mixin icon delivery;
         }
         &--restaurants {
-            @mixin icon restaurants;
+            @mixin icon restaurant;
         }
     }
 }
