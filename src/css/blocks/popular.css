@@ -54,7 +54,6 @@
 
 }
 
-
 .popular-cards {
     display: flex;
     flex-direction: row;
@@ -72,6 +71,9 @@
     min-height: 280px;
     padding: 16px;
 
+    font-size: 15px;
+    line-height: 1.2;
+
     background-color: #ffffff;
     text-align: center;
     border-radius: 12px;
@@ -88,5 +90,49 @@
         height: 20px;
 
     }
+
+    &__button {
+        min-width: 120px;
+    }
 }
 
+.popular-slider {
+    display: flex;
+    min-width: 210px;
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 34px;
+        height: 34px;
+
+        border: none;
+        background-color: transparent;
+        
+        &--previous {
+            rotate: 180deg;
+        }
+
+
+    }
+}
+
+.popular-slider {
+
+    display: flex;
+    gap: 25px;
+    min-width: 210px;
+
+    &__points {
+        display: flex;
+        justify-content: space-between;
+        min-width: 90px;
+    }
+
+    &__point {
+        border: 6px solid rgba(54, 56, 83, 0.2);
+        border-radius: 50%;
+    }
+}
