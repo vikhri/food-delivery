@@ -16,4 +16,14 @@
     border-radius: 5px;
     box-shadow: 0 22px 40px 0 rgba(255, 104, 56, 0.19);
 
+    &:hover,
+    &:focus {
+        background-color: $secondary-lighten;
+    }
+
+    &:active {
+        background-color: $secondary-darken;
+    }
+
+
 }

@@ -20,11 +20,6 @@
 
     /* Оформление */
 
-}
-
-.header-navigation {
-
-
 
     &__logo {
         margin-right: auto;
@@ -40,10 +35,19 @@
         max-width: 450px;
 
         list-style: none;
-    }
 
-    a {
+    }
+}
+
+
+.menu {
+
+    &__link {
         text-decoration: none;
+
+        &:hover {
+            color: $secondary-color;
+        }
     }
 }
 

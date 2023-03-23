@@ -23,15 +23,49 @@
     }
 
     &__info {
+
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: repeat(2, 30px);
+        grid-template-areas:
+                "title title"
+                "hours button";
+        align-items: baseline;
+        row-gap: 10px;
+        column-gap: 20px;
         padding: 20px;
+
+    }
+
+    &__name {
+        grid-area: title;
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 500;
+    }
+
+    &__hours {
+        padding-left: 40px;
+        grid-area: hours;
+
+        display: flex;
+        align-items: center;
+
+        background-image: url("./../img/icons/open-hours.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+
+        font-weight: 300;
+        font-size: 18px;
     }
 
     &__link {
 
+        grid-area: button;
+
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: auto;
 
         height: 33px;
         width: 80px;
@@ -40,7 +74,7 @@
 
         text-decoration: none;
         background-color: $secondary-color;
-        border-radius: 20px 20px 0px 20px;
+        border-radius: 20px 20px 0 20px;
 
     }
 }

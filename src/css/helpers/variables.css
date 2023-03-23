@@ -3,6 +3,8 @@
 $main-color: #363853;
 $secondary-color: #FF7a50;
 $light-color: #aaaaaa;
+$secondary-lighten: lighten($secondary-color, 7%);
+$secondary-darken: darken($secondary-color, 7%);
 
 /*icon upload */
 @define-mixin icon $name {
@@ -10,3 +12,15 @@ $light-color: #aaaaaa;
     background-repeat: no-repeat;
     background-position: left;
 }
+
+
+@define-mixin quotes {
+    position: absolute;
+
+    width: 32px;
+    height: 32px;
+    content:"";
+    background-image: url("./../img/icons/quotes.svg");
+    background-repeat: no-repeat;
+}
+

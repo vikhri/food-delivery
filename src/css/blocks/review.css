@@ -29,7 +29,23 @@
 
     &__text {
         padding: 65px 0 74px;
-     }
+        position: relative;
+
+        &::before {
+            @mixin quotes;
+            left: -38px;
+            top: 70px;
+        }
+
+        &::after {
+            @mixin quotes;
+            right: -34px;
+            bottom: 30px;
+        }
+
+    }
+
+
 
     &__switcher {
         display: flex;
