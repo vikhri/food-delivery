@@ -6,6 +6,11 @@ $light-color: #aaaaaa;
 $secondary-lighten: lighten($secondary-color, 7%);
 $secondary-darken: darken($secondary-color, 7%);
 
+/*screen width: */
+
+$tablet-width: 1000px;
+$mobile-width: 360px;
+
 /*icon upload */
 @define-mixin icon $name {
     background-image: url("./../img/icons/$name.svg");
@@ -13,7 +18,7 @@ $secondary-darken: darken($secondary-color, 7%);
     background-position: left;
 }
 
-
+/*icon upload */
 @define-mixin quotes {
     position: absolute;
 
