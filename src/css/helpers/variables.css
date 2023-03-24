@@ -7,18 +7,17 @@ $secondary-lighten: lighten($secondary-color, 7%);
 $secondary-darken: darken($secondary-color, 7%);
 
 /*screen width: */
-
-$tablet-width: 1000px;
+$desktop-width: 1440px;
+$tablet-width: 1220px;
 $mobile-width: 360px;
 
-/*icon upload */
+/*mixins */
 @define-mixin icon $name {
     background-image: url("./../img/icons/$name.svg");
     background-repeat: no-repeat;
     background-position: left;
 }
 
-/*icon upload */
 @define-mixin quotes {
     position: absolute;
 
@@ -29,3 +28,10 @@ $mobile-width: 360px;
     background-repeat: no-repeat;
 }
 
+@define-mixin fluid-text $max: 100, $min: 14 {
+    font-size: calc($(min)px + ($max - $min) * ((100vw - 360px) / (1920 - 360)));
+
+    @media (min-width: $desktop-width) {
+        font-size: $(max)px;
+    }
+}

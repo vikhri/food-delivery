@@ -1,12 +1,61 @@
+.intro {
+    margin: 8vw 0;
+}
+
 .two-column-block--intro img {
     order: 2;
+
+        @media (max-width: 700px) {
+            position: absolute;
+            opacity: 10%;
+        }
 }
 
 .button--intro {
-    min-width: 162px;
+    min-width: 12vw;
     min-height: 50px;
+
+    @media (max-width: $desktop-width) {
+        background-color: transparent;
+        color: $main-color;
+        box-shadow: unset;
+        text-decoration: underline;
+    }
+
+    &:hover {
+        @media (max-width: $desktop-width) {
+            background-color: transparent;
+        }
+    }
 }
 
 .link--intro {
     color: $main-color;
+
+    @media (max-width: $desktop-width) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        min-width: 162px;
+        min-height: 50px;
+
+
+        color: #ffffff;
+        text-decoration: none;
+
+        background-color: $secondary-color;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 22px 40px 0 rgba(255, 104, 56, 0.19);
+
+        &:hover,
+        &:focus {
+            background-color: $secondary-lighten;
+        }
+
+        &:active {
+            background-color: $secondary-darken;
+        }
+    }
 }

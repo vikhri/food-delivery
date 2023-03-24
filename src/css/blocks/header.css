@@ -1,45 +1,36 @@
 .header-navigation {
-
-    /* Позиционирование */
     position: relative;
-    /* Блочная модель */
+
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    column-gap: 60px;
+    column-gap: 4vw;
     row-gap: 15px;
-
     width: 100%;
     min-height: 50px;
 
-    /* Типографика */
     font-family: 'Rubik', 'Arial', sans-serif;
     font-size: 18px;
     line-height: 1.15;
     color: $main-color;
 
-    /* Оформление */
-
-
     &__logo {
         margin-right: auto;
-
-        @media (max-width: $tablet-width) {
-
-        }
     }
 
     &__menu {
-
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        gap: 60px;
+        row-gap: 15px;
+        column-gap: 60px;
 
         list-style: none;
 
         @media (max-width: $tablet-width) {
+            display: none;
+
             position: absolute;
             top: 60px;
             z-index: 2;
@@ -79,11 +70,28 @@
         height: 100%;
 
         list-style: none;
+
+        @media (max-width: $mobile-width) {
+            gap: 40px;
+        }
     }
 
     &__button {
         min-width: 120px;
         min-height: 50px;
+
+        @media (max-width: $tablet-width) {
+            display: none;
+        }
+
+        &--mobile {
+            display: block;
+            border: none;
+
+            @media (min-width: $tablet-width) {
+                display: none;
+            }
+        }
     }
 
     &__item--cart {

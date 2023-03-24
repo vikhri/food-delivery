@@ -1,9 +1,24 @@
+.advantages-block {
+    @media (max-width: 700px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.advantages__illustration {
+
+    @media (max-width: 700px) {
+        position: absolute;
+        width: 60vh;
+        opacity: 10%;
+    }
+}
 
 .advantages-list {
-
     padding-bottom: 30px;
 
-    font-size: 24px;
+    @mixin fluid-text 24, 16;
     line-height: 1.25;
 
     list-style: none;
@@ -14,7 +29,6 @@
         margin-bottom: 25px;
 
         text-transform: capitalize;
-
 
         &--speed {
             @mixin icon timer;

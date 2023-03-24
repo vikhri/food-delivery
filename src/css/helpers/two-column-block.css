@@ -3,6 +3,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
+    align-items: center;
+
 
     &__illustration {
         width: 100%;
@@ -10,9 +12,10 @@
     }
 
     &__description {
-        padding: 150px 0;
-        max-width: 515px;
+        max-width: 40vw;
     }
+
+
 }
 
 .description {
@@ -26,6 +29,7 @@
     &__links {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 30px;
         align-items: center;
 

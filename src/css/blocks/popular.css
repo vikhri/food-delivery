@@ -36,8 +36,9 @@
         align-items: center;
         gap: 9px;
 
-        width: 210px;
-        max-height: 70px;
+        width: 15vw;
+        max-width: 210px;
+        min-height: 5vw;
 
         color: $main-color;
 
@@ -52,6 +53,12 @@
 
     }
 
+    &__img {
+        @media (max-width: $tablet-width) {
+            display: none;
+        }
+    }
+
 }
 
 .popular-cards {
@@ -60,6 +67,11 @@
     justify-content: space-between;
 
     list-style: none;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        gap: 1vw;
+    }
 }
 
 .popular-card {
@@ -67,9 +79,10 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    min-width: 208px;
+    width: 14vw;
+    max-width: 210px;
     min-height: 280px;
-    padding: 16px;
+    padding: 1vw;
 
     font-size: 15px;
     line-height: 1.2;
@@ -77,6 +90,19 @@
     background-color: #ffffff;
     text-align: center;
     border-radius: 12px;
+
+    @media (max-width: 1000px) {
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 10vw;
+        width: 100%;
+        max-width: 100%;
+
+        background-color: white;
+    }
+
+    &__name {
+    }
 
     &__rating {
         display: grid;
@@ -92,7 +118,41 @@
     }
 
     &__button {
-        min-width: 120px;
+        display: none;
+
+        @media (min-width: 1000px) {
+            display: block;
+            min-width: 120px;
+        }
+
+        &--mobile {
+            width: 8vw;
+            height: 6vw;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+
+
+            @media (min-width: 1000px) {
+                display: none;
+            }
+
+        }
+
+    }
+
+    &__image {
+        height: 12vw;
+        width: auto;
+        
+        @media (max-width: 1000px) {
+            height: 10vw;
+        }
+        
+    }
+
+    &__price {
+
     }
 }
 
