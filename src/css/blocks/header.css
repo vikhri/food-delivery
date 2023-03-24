@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    column-gap: 4vw;
+    column-gap: 4vh;
     row-gap: 15px;
     width: 100%;
     min-height: 50px;

@@ -36,9 +36,9 @@
         align-items: center;
         gap: 9px;
 
-        width: 15vw;
+        width: 14vw;
         max-width: 210px;
-        min-height: 5vw;
+        min-height: 3vw;
 
         color: $main-color;
 
@@ -68,7 +68,7 @@
 
     list-style: none;
 
-    @media (max-width: 1000px) {
+    @media (max-width: $tablet-s-width) {
         flex-direction: column;
         gap: 1vw;
     }
@@ -91,7 +91,7 @@
     text-align: center;
     border-radius: 12px;
 
-    @media (max-width: 1000px) {
+    @media (max-width: $tablet-s-width) {
         flex-direction: row;
         justify-content: space-between;
         min-height: 10vw;
@@ -120,7 +120,7 @@
     &__button {
         display: none;
 
-        @media (min-width: 1000px) {
+        @media (min-width: $tablet-s-width) {
             display: block;
             min-width: 120px;
         }
@@ -133,7 +133,7 @@
             cursor: pointer;
 
 
-            @media (min-width: 1000px) {
+            @media (min-width: $tablet-s-width) {
                 display: none;
             }
 
@@ -142,18 +142,15 @@
     }
 
     &__image {
-        height: 12vw;
+        height: 10vw;
         width: auto;
         
-        @media (max-width: 1000px) {
+        @media (max-width: $tablet-s-width) {
             height: 10vw;
         }
         
     }
 
-    &__price {
-
-    }
 }
 
 .popular-slider {

@@ -8,8 +8,13 @@ $secondary-darken: darken($secondary-color, 7%);
 
 /*screen width: */
 $desktop-width: 1440px;
-$tablet-width: 1220px;
-$mobile-width: 360px;
+
+$tablet-width: 1280px;
+$tablet-s-width: 1024px;
+$tablet-xs-width: 768px;
+
+$mobile-width: 480px;
+$mobile-s-width: 360px;
 
 /*mixins */
 @define-mixin icon $name {

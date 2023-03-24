@@ -5,8 +5,13 @@
 .two-column-block--intro img {
     order: 2;
 
-        @media (max-width: 700px) {
+        @media (max-width: $tablet-xs-width) {
             position: absolute;
+            right: 10px;
+
+            width: 50vw;
+            height: auto;
+
             opacity: 10%;
         }
 }
