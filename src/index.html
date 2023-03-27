@@ -12,7 +12,7 @@
             <button type="button" class="header-navigation__toggle header-navigation__toggle--closed">
             </button>
             <img class="header-navigation__logo logo" src="./img/logo/logo.svg" width="102" height="40" alt="logo">
-            <ul class="header-navigation__menu menu">
+            <ul class="header-navigation__menu menu menu--open">
                 <li class="menu__item">
                     <a class="menu__link" href="">Home</a>
                 </li>
@@ -25,16 +25,30 @@
                 <li class="menu__item">
                     <a class="menu__link" href="">Contract</a>
                 </li>
-            </ul>
-            <div class="navigation__toolbar toolbar">
-                <ul class="toolbar__list">
-                    <li class="toolbar__item toolbar__item--search">
-                        <a class="toolbar__link" href="">
+                <li class="menu__item--search">
+                    <form class="toolbar__search search">
+                        <input class="search__input search__input" type="search">
+                        <button class="search__button" type="button">
                             <svg class="toolbar__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <ellipse cx="11.7666" cy="12.4792" rx="8.98856" ry="8.88424" stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M18.0183 19.1199L21.5423 22.594" stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                        </a>
+                        </button>
+                    </form>
+                </li>
+            </ul>
+            <div class="navigation__toolbar toolbar">
+                <ul class="toolbar__list">
+                    <li class="toolbar__item toolbar__item--search">
+                        <form class="toolbar__search search">
+                        <input class="search__input search__input--closed" type="search">
+                        <button class="search__button" type="button">
+                            <svg class="toolbar__icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="11.7666" cy="12.4792" rx="8.98856" ry="8.88424" stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18.0183 19.1199L21.5423 22.594" stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        </form>
                     </li>
                     <li class="toolbar__item toolbar__item--cart">
                         <a class="toolbar__link" href="" >
