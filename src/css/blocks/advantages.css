@@ -1,3 +1,26 @@
+.advantages {
+    margin: 8vw 0;
+
+    &__illustration {
+
+        @media (max-width: $tablet-xs-width) {
+            position: absolute;
+            right: 10px;
+            width: 50vw;
+            height: auto;
+            opacity: 0.1;
+        }
+    }
+
+
+    &__description {
+        @media (max-width: $tablet-xs-width) {
+            align-items: center;
+        }
+    }
+
+}
+
 .advantages-block {
     @media (max-width: $tablet-xs-width) {
         display: flex;
@@ -6,14 +29,7 @@
     }
 }
 
-.advantages__illustration {
 
-    @media (max-width: $tablet-xs-width) {
-        position: absolute;
-        width: 60vh;
-        opacity: 10%;
-    }
-}
 
 .advantages-list {
     padding-bottom: 30px;

@@ -1,14 +1,24 @@
 .footer-navigation {
 
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 30% 70%;
     padding-bottom: 30px;
+    
+    @media (max-width: $tablet-s-width ) {
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+    }
 
    &__contacts {
 
        display: flex;
        flex-direction: column;
        justify-content: space-between;
+       gap: 20px;
        height: 100%;
 
     }
@@ -16,13 +26,18 @@
    &__sitemap {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 100px;
+        justify-content: space-between;
 
        font-size: 18px;
        line-height: 1.12;
        color: #37383D;
-
        list-style: none;
+
+       @media (max-width: $tablet-s-width ) {
+           display: flex;
+           flex-direction: column;
+           gap: 30px;
+       }
    }
 }
 
@@ -55,11 +70,16 @@
 
     &__list {
         list-style: none;
+
     }
 
    &__title {
     margin-bottom: 10px;
     font-weight: 500;
+       display: flex;
+       justify-content: space-between;
+
+
    }
 
    &__item {
@@ -73,6 +93,83 @@
         text-decoration: none;
         color: inherit;
     }
+
+    &__toggle {
+
+        position: relative;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        
+        @media (min-width: $tablet-s-width) {
+            display: none;
+        }
+
+
+
+        &--open {
+
+
+            &::before {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 3px;
+                width: 100%;
+                background-color: #336699;
+                content: "";
+                transform: translateX(5px) rotate(45deg);
+                transform-origin: left bottom;
+
+
+            }
+
+            &::after {
+                position: absolute;
+                left: 5px;
+                bottom: 0;
+                height: 3px;
+                width: 100%;
+                background-color: #336699;
+                content: "";
+                transform: translateX(5px) rotate(-45deg);
+                transform-origin: right bottom;
+            }
+
+        }
+
+        &--closed {
+
+            &::before {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 3px;
+                width: 100%;
+                background-color: #336699;
+                content: "";
+                transform: translateX(5px) rotate(-45deg);
+                transform-origin: left bottom;
+
+
+            }
+
+            &::after {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 3px;
+                width: 100%;
+                background-color: #336699;
+                content: "";
+                transform: translateX(5px) rotate(45deg);
+                transform-origin: right bottom;
+            }
+
+        }
+
+    }
+
 }
 
 .legal {
@@ -86,8 +183,10 @@
     &__content {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding: 26px 0 36px;
+        gap: 30px;
     }
 
     &__documents {

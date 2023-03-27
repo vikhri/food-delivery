@@ -9,6 +9,8 @@
 <header class="page__header">
     <div class="wrapper">
         <div class="header-navigation">
+            <button type="button" class="header-navigation__toggle header-navigation__toggle--closed">
+            </button>
             <img class="header-navigation__logo logo" src="./img/logo/logo.svg" width="102" height="40" alt="logo">
             <ul class="header-navigation__menu menu">
                 <li class="menu__item">
@@ -47,7 +49,13 @@
                     </li>
                     <li class="toolbar__item">
                         <button type="button" class="toolbar__button button">Sign Up</button>
-                        <button type="button" class="toolbar__button--mobile">🙍‍♂️</button>
+                        <button type="button" class="toolbar__button--mobile">
+                            <svg width="22" height="22" viewBox="0 0 40 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="10" r="8" stroke="#363853" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M38 42C38 32.0589 29.9411 24 20 24C10.0589 24 2 32.0589 2 42" stroke="#363853" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -309,7 +317,7 @@
         <div class="wrapper">
             <div class="two-column-block two-column-block--advantages advantages-block">
                 <img class="two-column-block__illustration advantages__illustration " alt="" src="./img/decoration/advantage-pic.png">
-                <div class="two-column-block__description two-column-block__description--advantages description">
+                <div class="two-column-block__description advantages__description description">
                     <h2 class="description__title section-title">Stay at home, we will Provide good food</h2>
                     <p class="description__text">
                         We provide super fast-delivery service. Let’s use our services right now and get discounts of up
@@ -411,7 +419,7 @@
     <section class="app">
         <div class="wrapper">
             <div class="two-column-block two-column-block--app">
-                <img class="two-column-block__illustration two-column-block__illustration--app " alt="" src="./img/decoration/app.png">
+                <img class="two-column-block__illustration two-column-block__illustration--app app__illustration " alt="" src="./img/decoration/app.png">
                 <div class="two-column-block__description two-column-block__description--app description">
                     <h2 class="description__title section-title">Download our mobile app</h2>
                     <p class="description__text">
@@ -474,6 +482,12 @@
                         <input class="subscription-form__input" type="email" name="email" id="email" placeholder="Enter your email address">
                     </label>
                     <button class="subscription-form__button button" type="submit">Subscribe</button>
+                    <button class="subscription-form__button--mobile button" type="submit">
+                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.52503 14.3001C8.27998 14.3001 8.05378 14.1616 7.94328 13.9406L6.01408 10.0822C5.90813 9.87034 5.92633 9.61684 6.06088 9.42119L9.17503 5.20009L4.95328 8.31359C4.75763 8.44879 4.50413 8.46569 4.29223 8.36039L0.434476 6.43184C0.203076 6.31549 0.0620263 6.07304 0.0763263 5.81434C0.0899763 5.55564 0.257026 5.32944 0.500126 5.24039L12.8501 0.690388C13.0874 0.603938 13.3545 0.660488 13.5346 0.840538C13.714 1.01929 13.7725 1.28709 13.6847 1.52499L9.13473 13.875C9.04503 14.1181 8.81948 14.2851 8.56078 14.2988C8.54908 14.2994 8.53673 14.3001 8.52503 14.3001Z" fill="#ffffff"/>
+                        </svg>
+                    </button>
+
                 </form>
             </div>
         </div>
@@ -521,7 +535,7 @@
             </div>
             <ul class="footer-navigation__sitemap sitemap">
                 <li class="sitemap__category sitemap-category">
-                    <p class="sitemap-category__title">Service</p>
+                    <p class="sitemap-category__title">Service<span class="sitemap-category__toggle sitemap-category__toggle--open"></span></p>
                     <ul class="sitemap-category__list">
                         <li class="sitemap-category__item">
                             <a class="sitemap-category__link" href="">How ir works</a>
@@ -538,7 +552,7 @@
                     </ul>
                 </li>
                 <li class="sitemap__category sitemap-category">
-                    <p class="sitemap-category__title">Service</p>
+                    <p class="sitemap-category__title">Service<span class="sitemap-category__toggle sitemap-category__toggle--open"></span></p>
                     <ul class="sitemap-category__list">
                         <li class="sitemap-category__item">
                             <a class="sitemap-category__link" href="">About us</a>
@@ -555,7 +569,7 @@
                     </ul>
                 </li>
                 <li class="sitemap__category sitemap-category">
-                    <p class="sitemap-category__title">Service</p>
+                    <p class="sitemap-category__title">Service<span class="sitemap-category__toggle sitemap-category__toggle--open" ></span></p>
                     <ul class="sitemap-category__list">
                         <li class="sitemap-category__item">
                             <a class="sitemap-category__link" href="">Help center</a>
@@ -572,7 +586,7 @@
                     </ul>
                 </li>
                 <li class="sitemap__category sitemap-category">
-                    <p class="sitemap-category__title">Service</p>
+                    <p class="sitemap-category__title">Service<span class="sitemap-category__toggle sitemap-category__toggle--closed"></span></p>
                     <ul class="sitemap-category__list">
                         <li class="sitemap-category__item">
                             <a class="sitemap-category__link" href="">Blog</a>
