@@ -16,11 +16,11 @@ module.exports = {
         port: 3000,
         open: true,
     },
-    entry: path.resolve(__dirname, 'src', 'index.js'),
+    entry: path.resolve(__dirname, 'src', 'index.footer-menu-toggle.js'),
     output: {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
-        filename: 'main.[contenthash].js',
+        filename: 'main.[contenthash].footer-menu-toggle.js',
         assetModuleFilename: "assets/[name].[ext]"
 
     },

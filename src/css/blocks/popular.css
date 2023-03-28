@@ -21,17 +21,19 @@
 
 }
 
+
 .popular-filter {
     display: flex;
-    flex-wrap: wrap;
-    gap: 2%;
+    column-gap: 20px;
     row-gap: 15px;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 100%;
+    width: 100%;
+    overflow: auto;
 
     list-style: none;
     color: white;
+
 
     &__item {
 
@@ -71,10 +73,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 20px;
 
     list-style: none;
+
+    overflow: auto;
+    overflow-style: marquee-line;
 
 }
 
@@ -86,8 +90,7 @@
     width: 14vw;
     min-width: 120px;
     max-width: 210px;
-    min-height: 280px;
-    padding: 1vw;
+    padding: 2%;
 
     font-size: 15px;
     line-height: 1.2;
@@ -96,15 +99,7 @@
     text-align: center;
     border-radius: 12px;
 
-    @media (max-width: $tablet-s-width) {
-        flex-direction: row;
-        justify-content: space-between;
-        min-height: 10vw;
-        width: 100%;
-        max-width: 100%;
 
-        background-color: white;
-    }
 
     &__name {
     }
@@ -117,34 +112,12 @@
 
     &__star {
         background-image: url("./../img/icons/star.png");
-        width: 20px;
-        height: 20px;
+        min-width: 5px;
+        max-width: 20px;
+        height: auto;
 
     }
 
-    &__button {
-        display: none;
-
-        @media (min-width: $tablet-s-width) {
-            display: block;
-            min-width: 120px;
-        }
-
-        &--mobile {
-            width: 8vw;
-            height: 6vw;
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-
-
-            @media (min-width: $tablet-s-width) {
-                display: none;
-            }
-
-        }
-
-    }
 
     &__image {
         height: 10vw;
@@ -156,10 +129,15 @@
         
     }
 
+    &__button {
+        min-width: 95px;
+    }
 }
+
 
 .popular-slider {
     display: flex;
+    gap: 25px;
     min-width: 210px;
 
     &__button {
@@ -176,16 +154,7 @@
         &--previous {
             rotate: 180deg;
         }
-
-
     }
-}
-
-.popular-slider {
-
-    display: flex;
-    gap: 25px;
-    min-width: 210px;
 
     &__points {
         display: flex;
@@ -198,3 +167,4 @@
         border-radius: 50%;
     }
 }
+
