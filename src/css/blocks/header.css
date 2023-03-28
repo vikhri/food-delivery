@@ -19,18 +19,25 @@
         margin-right: auto;
     }
 
+    &__button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        position: relative;
 
+        @media (min-width: $tablet-s-width) {
+            display: none;
+        }
+    }
 
     &__toggle {
         display: block;
-        border: none;
-        margin-top: 10px;
-
-        @media (min-width: $tablet-s-width) {
-           display: none;
-        }
+        margin: -5px 0 0;
 
         &--closed {
+
             width: 30px;
             height: 2px;
             background-color: #000;
@@ -41,13 +48,13 @@
         &--open {
 
             position: relative;
-            bottom: 10px;
-            right: 20px;
+            right: 15px;
+            bottom: -8px;
 
             &::before {
                 content: "";
                 position: absolute;
-                width: 32px;
+                width: 30px;
                 height: 2px;
                 background-color: #000;
                 transform: rotate(-45deg);
@@ -56,7 +63,7 @@
             &::after {
                 content: "";
                 position: absolute;
-                width: 32px;
+                width: 30px;
                 height: 2px;
                 background-color: #000;
                 transform: rotate(45deg);
@@ -71,43 +78,58 @@
 
 .menu {
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    row-gap: 15px;
-    column-gap: 60px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 2;
 
-    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 50%;
+    min-width: 300px;
+    height: 100vh;
+    padding: 30px 10px 10px 20px;
 
-    @media (max-width: $tablet-s-width) {
-        display: none;
+    background-color: white;
 
-        position: absolute;
-        top: 60px;
-        left: 0;
-        z-index: 2;
 
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-        width: 50%;
-        height: 100vh;
-        padding: 30px;
 
-        background-color: white;
+    @media (min-width: $tablet-s-width) {
+        position: initial;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        row-gap: 15px;
+        column-gap: 60px;
+        width: inherit;
+        height: inherit;
+        padding: 0;
+
+        background-color: transparent;
+
+        list-style: none;
 
     }
 
     &__item {
+        display: block;
 
         &--search {
-            display: none;
-            @media (max-width: $tablet-s-width) {
-                display: flex;
+
+            @media (min-width: $tablet-s-width) {
+                display: none;
+
             }
+
         }
-    }
+
+        }
+
 
     &__link {
         text-decoration: none;
@@ -117,9 +139,6 @@
         }
     }
 
-    &--closed {
-        display: none;
-    }
 
     &--open {
         display: flex;
@@ -138,6 +157,7 @@
         height: 100%;
 
         list-style: none;
+
 
     }
 
@@ -205,6 +225,7 @@
     &__button {
     background-color: transparent;
     border: none;
+
 }
     &__input {
 
@@ -212,7 +233,8 @@
         border-radius: 30px;
         padding: 1vh;
         width: 20vw;
-        margin-right: 20px;
+        min-width: 200px;
+        margin-right: 10px;
 
 
         &--closed {
@@ -227,4 +249,13 @@
         }
     }
 
+}
+
+.toolbar-search {
+
+    &__input {
+        &--closed {
+            display: none;
+        }
+    }
 }
