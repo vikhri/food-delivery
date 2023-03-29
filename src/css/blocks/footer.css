@@ -3,42 +3,42 @@
     display: grid;
     grid-template-columns: 30% 70%;
     padding-bottom: 30px;
-    
+
     @media (max-width: $tablet-s-width ) {
 
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 30px;
-        
-    }
-
-   &__contacts {
-
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
-       gap: 20px;
-       height: 100%;
 
     }
 
-   &__sitemap {
+    &__contacts {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        height: 100%;
+
+    }
+
+    &__sitemap {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         justify-content: space-between;
 
-       font-size: 18px;
-       line-height: 1.12;
-       color: #37383D;
-       list-style: none;
+        font-size: 18px;
+        line-height: 1.12;
+        color: #37383D;
+        list-style: none;
 
-       @media (max-width: $tablet-s-width ) {
-           display: flex;
-           flex-direction: column;
-           gap: 30px;
-       }
-   }
+        @media (max-width: $tablet-s-width ) {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
 }
 
 .socials {
@@ -67,27 +67,39 @@
 
 
 .sitemap-category {
+    min-width: 106px;
 
     &__list {
+
+        display: none;
         list-style: none;
+
+        @media (min-width: $tablet-s-width) {
+            display: block;
+        }
+
+        &--open {
+            display: block;
+        }
+    }
+
+    &__title {
+
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding-right: 10px;
+
+        font-weight: 500;
 
     }
 
-   &__title {
-    margin-bottom: 10px;
-    font-weight: 500;
-       display: flex;
-       justify-content: space-between;
+    &__item {
+        font-size: 18px;
+        line-height: 1.2;
 
-
-   }
-
-   &__item {
-    font-size: 18px;
-    line-height: 1.2;
-
-    padding: 13px 0;
-   }
+        padding: 13px 0;
+    }
 
     &__link {
         text-decoration: none;
@@ -100,67 +112,61 @@
         display: inline-block;
         width: 10px;
         height: 10px;
-        
+
         @media (min-width: $tablet-s-width) {
             display: none;
         }
 
 
-
-        &--open {
+        &--closed {
 
 
             &::before {
                 position: absolute;
-                left: 0;
-                bottom: 0;
+                left: 4px;
+                bottom: 1px;
                 height: 3px;
-                width: 100%;
-                background-color: #336699;
+                width: 80%;
+                background-color: $secondary-color;
                 content: "";
                 transform: translateX(5px) rotate(45deg);
                 transform-origin: left bottom;
-
-
             }
 
             &::after {
                 position: absolute;
-                left: 5px;
-                bottom: 0;
+                left: 10px;
+                bottom: 1px;
                 height: 3px;
-                width: 100%;
-                background-color: #336699;
+                width: 80%;
+                background-color: $secondary-color;
                 content: "";
                 transform: translateX(5px) rotate(-45deg);
                 transform-origin: right bottom;
             }
-
         }
 
-        &--closed {
+        &--open {
 
             &::before {
                 position: absolute;
-                left: 0;
-                bottom: 0;
+                left: 7px;
+                bottom: -1px;
                 height: 3px;
-                width: 100%;
-                background-color: #336699;
+                width: 80%;
+                background-color: $secondary-color;
                 content: "";
                 transform: translateX(5px) rotate(-45deg);
                 transform-origin: left bottom;
-
-
             }
 
             &::after {
                 position: absolute;
-                left: 0;
-                bottom: 0;
+                left: 7px;
+                bottom: -1px;
                 height: 3px;
-                width: 100%;
-                background-color: #336699;
+                width: 80%;
+                background-color: $secondary-color;
                 content: "";
                 transform: translateX(5px) rotate(45deg);
                 transform-origin: right bottom;
@@ -226,12 +232,12 @@
     }
 
     &__phone {
-         @mixin icon phone;
-    }
-    &__email {
-      @mixin icon email;
+        @mixin icon phone;
     }
 
+    &__email {
+        @mixin icon email;
+    }
 
 
 }

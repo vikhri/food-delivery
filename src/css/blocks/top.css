@@ -18,10 +18,13 @@
             grid-template-columns: 1fr 1fr;
             row-gap: 4vw;
         }
-        @media (max-width: $mobile-width) {
-            grid-template-columns: 1fr;
-            row-gap: 4vw;
+
+        @media (max-width: $mobile-s-width) {
+            grid-template-columns: 80%;
+            justify-content: center;
         }
+
+
 
 
 }
@@ -63,6 +66,10 @@
             padding: 15px;
         }
 
+        @media (max-width: $mobile-width) {
+            padding: 7%;
+        }
+
     }
 
     &__name {
@@ -85,9 +92,15 @@
         background-size: contain;
 
         font-weight: 300;
-        @mixin fluid-text 18, 13;
+        @mixin fluid-text 18, 10;
         line-height: 1.3;
+
+        @media (max-width: $tablet-xs-width) {
+            padding-left: 12%;
+        }
     }
+
+
 
     &__link {
 

@@ -1,5 +1,3 @@
-window.addEventListener('DOMContentLoaded', () => {
-
     const selectors = {
         title: '.sitemap-category__title',
         toggle: '.sitemap-category__toggle',
@@ -21,29 +19,25 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const toggle = ({currentTarget}) => {
 
-        const title = currentTarget.querySelector(selectors.title);
         const toggle = currentTarget.querySelector(selectors.toggle);
-        const list = currentTarget.querySelector(selectors.list);
+        const list = currentTarget.parentElement.querySelector(selectors.list);
+        console.log(list);
 
-        title.addEventListener('click', () => {
-
-            const isClosed = toggle.classList.contains(states.toggle.closed);
+        const isClosed = toggle.classList.contains(states.toggle.closed);
 
             toggle.classList.toggle(states.toggle.open, isClosed);
             toggle.classList.toggle(states.toggle.closed, !isClosed);
             list.classList.toggle(states.list.open, isClosed);
-
-
-        });
-
     }
-});
 
 
-const initFaqToggle = () => {
-    const rootNodes = document.querySelectorAll(selectors.title)
 
-    rootNodes.forEach((node) => {
+const initToggle = () => {
+    const titles = document.querySelectorAll(selectors.title)
+
+    titles.forEach((node) => {
         node.addEventListener('click', toggle)
     })
 };
+
+    window.addEventListener('DOMContentLoaded', initToggle);
