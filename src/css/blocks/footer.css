@@ -28,7 +28,7 @@
         grid-template-columns: repeat(4, 1fr);
         justify-content: space-between;
 
-        font-size: 18px;
+        @mixin fluid-text 18, 16;
         line-height: 1.12;
         color: #37383D;
         list-style: none;
@@ -95,7 +95,7 @@
     }
 
     &__item {
-        font-size: 18px;
+        @mixin fluid-text 18, 14;
         line-height: 1.2;
 
         padding: 13px 0;
@@ -213,7 +213,7 @@
 
 .contacts {
 
-    font-size: 16px;
+    @mixin fluid-text 16, 14;
     line-height: 1.25;
 
     &__link {
