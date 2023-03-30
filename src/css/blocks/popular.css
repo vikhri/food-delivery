@@ -60,9 +60,15 @@
         &--current {
             background-color: $secondary-color;
             color: #ffffff;
+
+        }
+
+        &--current svg path{
+            fill: white;
         }
 
     }
+
 
     &__img {
         @media (max-width: $tablet-width) {
