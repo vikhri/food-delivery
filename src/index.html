@@ -104,8 +104,11 @@
     <section class="intro">
         <div class="wrapper">
             <div class="two-column-block two-column-block--intro">
-                <img class="two-column-block__illustration two-column-block__illustration--intro"
-                     src="./img/decoration/intro-pic.png" alt="">
+                <div class="two-column-block__illustration two-column-block__illustration--intro intro-illustration">
+                <img class="intro-illustration__img" src="./img/decoration/intro-pic.png" alt="">
+                    <span class="intro-illustration__decoration--blocks"></span>
+                    <span class="intro-illustration__decoration--cubes"></span>
+                </div>
                 <div class="two-column-block__description description--intro">
                     <h1 class="description__title title">super fast Food delivery service</h1>
                     <p class="description__text">
@@ -128,7 +131,7 @@
         <div class="wrapper">
             <h2 class="popular__title section-title">Our popular Category</h2>
             <ul class="popular__filter popular-filter">
-                <li class="popular-filter__item popular-filter__item--current" id="Burger">
+                <li class="popular-filter__item popular-filter__item--current" id="burger">
                     <svg class="popular-filter__img" width="44" height="44" viewBox="0 0 44 44" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_0_161)">
@@ -151,7 +154,7 @@
                     </svg>
                     <p class="popular-filter__name">Burger</p>
                 </li>
-                <li class="popular-filter__item" id="Pizza">
+                <li class="popular-filter__item" id="pizza">
                     <svg class="popular-filter__img" width="63" height="63" viewBox="0 0 63 63" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_0_172)">
@@ -177,7 +180,7 @@
                     </svg>
                     <p class="popular-filter__name">Pizza</p>
                 </li>
-                <li class="popular-filter__item" id="Sandwich">
+                <li class="popular-filter__item" id="sandwich">
                     <svg class="popular-filter__img" width="44" height="44" viewBox="0 0 44 44" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path d="M41.7999 6.59989H40.3333V5.13319C40.3333 3.91821 39.3482 2.93319 38.1333 2.93319H36.3865L35.3253 0.810968C35.0787 0.312358 34.5697 -0.00234463 34.0134 -0.00011025H33C32.1899 -0.00011025 31.5333 0.656538 31.5333 1.46659V2.93328H23.4666C22.2515 2.93328 21.2666 3.91821 21.2666 5.13328V6.59989H19.8C18.585 6.59989 17.6 7.58491 17.6 8.79989V10.2666C17.6 11.0766 18.2566 11.7333 19.0666 11.7333H19.1444L20.0024 19.31L16.4692 18.4799C16.291 18.2057 16.1025 17.9336 15.8928 17.6666L14.6461 12.3008C14.5691 11.969 14.2739 11.734 13.9333 11.7332H9.71957C7.73149 9.98127 5.38187 9.18927 3.60941 9.71066L2.53287 8.53735C2.12605 8.09323 1.48693 7.94722 0.927647 8.17066C0.36742 8.38653 -0.00159544 8.92553 -4.85612e-05 9.52589V41.8146C0.00158425 43.0208 0.979038 43.9983 2.18526 43.9999H38.1333C38.5061 43.9996 38.8193 43.7198 38.8615 43.3494L42.4541 11.7332H42.5333C43.3434 11.7332 44 11.0765 44 10.2665V8.79989C44 7.58491 43.015 6.59989 41.7999 6.59989ZM33 1.46659H34.0134L34.7467 2.93328H33V1.46659ZM22.7333 5.13319C22.7333 4.72817 23.0616 4.39989 23.4666 4.39989H38.1333C38.5383 4.39989 38.8666 4.72817 38.8666 5.13319V6.59989H22.7333V5.13319ZM20.68 20.9732L20.7262 20.982L21.3187 21.1227L21.7162 25.2844C20.5645 24.469 19.1864 24.0346 17.7753 24.0421C18.0469 22.7482 17.9031 21.4017 17.3646 20.1943L20.68 20.9732ZM22.1129 27.4596L22.1224 27.4677C22.388 27.7134 22.6403 27.9734 22.8777 28.2464C23.7502 29.2199 24.3917 30.3778 24.7543 31.6337C24.8783 32.0711 24.9421 32.5233 24.9443 32.9779L18.095 25.5081C19.6184 25.6787 21.0369 26.3677 22.1129 27.4596ZM14.385 18.1397V18.1382C15.9676 19.9569 16.7046 22.1415 16.3548 23.6096L8.89165 15.4733C10.3972 15.1367 12.6866 16.1941 14.385 18.1397ZM13.3466 13.1999L13.9333 15.6969C13.344 15.237 12.7017 14.8495 12.0201 14.5427C11.7429 14.0738 11.4329 13.6251 11.0924 13.1999H13.3466ZM9.66019 13.7455H9.66311C9.72395 13.8152 9.77388 13.8922 9.83249 13.9655C9.14404 13.9021 8.45087 14.0185 7.82095 14.3036L4.80618 11.016C6.28026 11.0373 8.2038 12.0742 9.66019 13.7455ZM30.737 42.1025C30.6235 42.3636 30.3661 42.5328 30.0813 42.5333H23.4666H2.18526C1.78831 42.5333 1.46656 42.2115 1.46656 41.8146L1.45333 9.53328L16.1721 25.5815V25.5852L24.8166 35.0093L24.8262 35.0203L29.568 40.1917C29.5848 40.2137 29.6024 40.2357 29.6215 40.257L30.6049 41.3291C30.7987 41.5377 30.8506 41.8413 30.737 42.1025ZM26.1976 34.3448C26.3318 33.9069 26.4 33.4513 26.4 32.9933C26.7852 33.3182 27.1442 33.673 27.4736 34.0544C27.8832 34.5225 28.2469 35.0289 28.5596 35.5666C28.9879 36.2867 29.2906 37.0742 29.455 37.8957L26.1976 34.3448ZM37.4784 42.5333H32.1361C32.4108 41.7734 32.2366 40.9238 31.6851 40.3333L30.9466 39.5266C31.0915 38.299 30.8935 37.0552 30.3746 35.9333H38.2286L37.4784 42.5333ZM38.3951 34.4666H29.5951C29.2941 33.9836 28.9568 33.5242 28.586 33.0923C27.8643 32.2546 27.0171 31.534 26.0743 30.956C25.6434 29.5974 24.931 28.3447 23.9836 27.2798C23.7636 27.0305 23.5436 26.798 23.3126 26.5743L22.7333 20.4635C22.7035 20.1509 22.4779 19.892 22.1723 19.8197L21.5226 19.6657L21.3686 18.3332H40.2292L38.3951 34.4666ZM40.3956 16.8666H21.2021L20.6213 11.7333H40.9786L40.3956 16.8666ZM42.5333 10.2666H19.0666V8.79989C19.0666 8.39487 19.3949 8.06658 19.8 8.06658H41.7999C42.205 8.06658 42.5333 8.39487 42.5333 8.79989V10.2666Z"
@@ -199,7 +202,7 @@
                     </svg>
                     <p class="popular-filter__name">Sandwich</p>
                 </li>
-                <li class="popular-filter__item" id="Asian">
+                <li class="popular-filter__item" id="asian">
                     <svg class="popular-filter__img" width="44" height="44" viewBox="0 0 44 44" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_0_199)">
@@ -233,7 +236,7 @@
                     </svg>
                     <p class="popular-filter__name">Asian Food</p>
                 </li>
-                <li class="popular-filter__item" id="Set">
+                <li class="popular-filter__item" id="set">
                     <svg class="popular-filter__img" width="44" height="45" viewBox="0 0 44 45" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_0_228)">
@@ -268,7 +271,7 @@
                     <p class="popular-filter__name">Set menu</p>
                 </li>
             </ul>
-            <div class="swiper-food swiper-food--burger hidden">
+            <div class="swiper-food swiper-food--burger">
                 <div class="swiper-wrapper popular__cards popular-cards">
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
@@ -281,8 +284,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Hamburger</p>
+                            <b class="popular-card__price">195$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -313,7 +316,55 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
+                            <p class="popular-card__name">Royal Cheese</p>
+                            <b class="popular-card__price">105$</b>
+                            <button class="popular-card__button button" type="button">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="popular-cards__item popular-card">
+                            <img class="popular-card__image" src="./img/food-items/burger-1.png" alt="" width="144"
+                                 height="144">
+                            <div class="popular-card__rating">
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                            </div>
+                            <p class="popular-card__name">Quater Pounder</p>
+                            <b class="popular-card__price">110$</b>
+                            <button class="popular-card__button button" type="button">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="popular-cards__item popular-card">
+                            <img class="popular-card__image" src="./img/food-items/burger-1.png" alt="" width="144"
+                                 height="144">
+                            <div class="popular-card__rating">
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                            </div>
+                            <p class="popular-card__name">Bacon Cheese</p>
+                            <b class="popular-card__price">145$</b>
+                            <button class="popular-card__button button" type="button">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="popular-cards__item popular-card">
+                            <img class="popular-card__image" src="./img/food-items/burger-1.png" alt="" width="144"
+                                 height="144">
+                            <div class="popular-card__rating">
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                            </div>
+                            <p class="popular-card__name">Lamb burger</p>
                             <b class="popular-card__price">115$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
@@ -329,7 +380,7 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
+                            <p class="popular-card__name">Rat burger</p>
                             <b class="popular-card__price">115$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
@@ -345,56 +396,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
-                            <button class="popular-card__button button" type="button">Add to card</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="popular-cards__item popular-card">
-                            <img class="popular-card__image" src="./img/food-items/burger-1.png" alt="" width="144"
-                                 height="144">
-                            <div class="popular-card__rating">
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                            </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
-                            <button class="popular-card__button button" type="button">Add to card</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="popular-cards__item popular-card">
-                            <img class="popular-card__image" src="./img/food-items/burger-1.png" alt="" width="144"
-                                 height="144">
-                            <div class="popular-card__rating">
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                            </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
-                            <button class="popular-card__button button" type="button">Add to card</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="popular-cards__item popular-card">
-                            <img class="popular-card__image" src="./img/food-items/burger-1.png" alt="" width="144"
-                                 height="144">
-                            <div class="popular-card__rating">
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                            </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Vegan burger</p>
+                            <b class="popular-card__price">1115$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -425,7 +428,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-food swiper-food--pizza hidden">
+            <div class="swiper-food swiper-food--pizza hidden" >
                 <div class="swiper-wrapper popular__cards popular-cards">
                      <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
@@ -438,7 +441,103 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
+                            <p class="popular-card__name">Pizza Margerita</p>
+                            <b class="popular-card__price">4$</b>
+                            <button class="popular-card__button button" type="button">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="popular-cards__item popular-card">
+                            <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
+                                 height="144">
+                            <div class="popular-card__rating">
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                            </div>
+                            <p class="popular-card__name">Pizza Pesto</p>
+                            <b class="popular-card__price">19$</b>
+                            <button class="popular-card__button button" type="button">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="popular-cards__item popular-card">
+                            <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
+                                 height="144">
+                            <div class="popular-card__rating">
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                            </div>
+                            <p class="popular-card__name">Pizza Pepperoni</p>
+                            <b class="popular-card__price">35$</b>
+                            <button class="popular-card__button button" type="button">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="popular-cards__item popular-card">
+                            <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
+                                 height="144">
+                            <div class="popular-card__rating">
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                            </div>
+                            <p class="popular-card__name">Pizza Piccola</p>
+                            <b class="popular-card__price">5$</b>
+                            <button class="popular-card__button button" type="button">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="popular-cards__item popular-card">
+                            <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
+                                 height="144">
+                            <div class="popular-card__rating">
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                            </div>
+                            <p class="popular-card__name">Pizza Alfredo</p>
+                            <b class="popular-card__price">10$</b>
+                            <button class="popular-card__button button" type="button">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="popular-cards__item popular-card">
+                            <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
+                                 height="144">
+                            <div class="popular-card__rating">
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                            </div>
+                            <p class="popular-card__name">Pizza Familia</p>
+                            <b class="popular-card__price">18$</b>
+                            <button class="popular-card__button button" type="button">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="popular-cards__item popular-card">
+                            <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
+                                 height="144">
+                            <div class="popular-card__rating">
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                            </div>
+                            <p class="popular-card__name">Pizza Foo</p>
                             <b class="popular-card__price">115$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
@@ -454,8 +553,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Pizza Bar</p>
+                            <b class="popular-card__price">1500$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -470,104 +569,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
-                            <button class="popular-card__button button" type="button">Add to card</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="popular-cards__item popular-card">
-                            <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
-                                 height="144">
-                            <div class="popular-card__rating">
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                            </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
-                            <button class="popular-card__button button" type="button">Add to card</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="popular-cards__item popular-card">
-                            <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
-                                 height="144">
-                            <div class="popular-card__rating">
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                            </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
-                            <button class="popular-card__button button" type="button">Add to card</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="popular-cards__item popular-card">
-                            <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
-                                 height="144">
-                            <div class="popular-card__rating">
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                            </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
-                            <button class="popular-card__button button" type="button">Add to card</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="popular-cards__item popular-card">
-                            <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
-                                 height="144">
-                            <div class="popular-card__rating">
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                            </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
-                            <button class="popular-card__button button" type="button">Add to card</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="popular-cards__item popular-card">
-                            <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
-                                 height="144">
-                            <div class="popular-card__rating">
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                            </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
-                            <button class="popular-card__button button" type="button">Add to card</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="popular-cards__item popular-card">
-                            <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
-                                 height="144">
-                            <div class="popular-card__rating">
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                            </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Pizza Neapolitana</p>
+                            <b class="popular-card__price">31$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -611,7 +614,39 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
+                            <p class="popular-card__name">Sandwich Alfa</p>
+                            <b class="popular-card__price">1$</b>
+                            <button class="popular-card__button button" type="button">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="popular-cards__item popular-card">
+                            <img class="popular-card__image" src="./img/food-items/sandwich-1.jpg" alt="" width="144"
+                                 height="144">
+                            <div class="popular-card__rating">
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                            </div>
+                            <p class="popular-card__name">Sandwich Beta</p>
+                            <b class="popular-card__price">2$</b>
+                            <button class="popular-card__button button" type="button">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="popular-cards__item popular-card">
+                            <img class="popular-card__image" src="./img/food-items/sandwich-1.jpg" alt="" width="144"
+                                 height="144">
+                            <div class="popular-card__rating">
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                            </div>
+                            <p class="popular-card__name">Sandwich Gamma</p>
                             <b class="popular-card__price">115$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
@@ -627,8 +662,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Sandwich Delta</p>
+                            <b class="popular-card__price">3$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -643,8 +678,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Sandwich Epsilon</p>
+                            <b class="popular-card__price">5$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -659,8 +694,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Sandwich Zeta</p>
+                            <b class="popular-card__price">6$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -675,40 +710,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
-                            <button class="popular-card__button button" type="button">Add to card</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="popular-cards__item popular-card">
-                            <img class="popular-card__image" src="./img/food-items/sandwich-1.jpg" alt="" width="144"
-                                 height="144">
-                            <div class="popular-card__rating">
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                            </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
-                            <button class="popular-card__button button" type="button">Add to card</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="popular-cards__item popular-card">
-                            <img class="popular-card__image" src="./img/food-items/sandwich-1.jpg" alt="" width="144"
-                                 height="144">
-                            <div class="popular-card__rating">
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                            </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Sandwich Eta</p>
+                            <b class="popular-card__price">8$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -752,8 +755,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Pad Thai</p>
+                            <b class="popular-card__price">1$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -768,8 +771,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Tom Yam</p>
+                            <b class="popular-card__price">5$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -784,8 +787,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Fried rice</p>
+                            <b class="popular-card__price">2$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -800,8 +803,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Nasi Campur</p>
+                            <b class="popular-card__price">4$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -816,8 +819,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Ayam Goreng</p>
+                            <b class="popular-card__price">5$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -832,8 +835,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Ramyen</p>
+                            <b class="popular-card__price">45$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -848,8 +851,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Sashimi</p>
+                            <b class="popular-card__price">19$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -864,8 +867,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Noodles</p>
+                            <b class="popular-card__price">4$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -896,7 +899,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-food swiper-food--set">
+            <div class="swiper-food swiper-food--set hidden">
                 <div class="swiper-wrapper popular__cards popular-cards">
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
@@ -909,7 +912,7 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
+                            <p class="popular-card__name">Set One</p>
                             <b class="popular-card__price">115$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
@@ -925,7 +928,23 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
+                            <p class="popular-card__name">Set Two</p>
+                            <b class="popular-card__price">123$</b>
+                            <button class="popular-card__button button" type="button">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="popular-cards__item popular-card">
+                            <img class="popular-card__image" src="./img/food-items/set-1.png" alt="" width="144"
+                                 height="144">
+                            <div class="popular-card__rating">
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                                <span class="popular-card__star"></span>
+                            </div>
+                            <p class="popular-card__name">Set Three</p>
                             <b class="popular-card__price">115$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
@@ -941,7 +960,7 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
+                            <p class="popular-card__name">Set Four</p>
                             <b class="popular-card__price">115$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
@@ -957,8 +976,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Set Five</p>
+                            <b class="popular-card__price">139$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -973,8 +992,8 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
+                            <p class="popular-card__name">Set Six</p>
+                            <b class="popular-card__price">190$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
                     </div>
@@ -989,23 +1008,7 @@
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
                             </div>
-                            <p class="popular-card__name">Cheeseburger</p>
-                            <b class="popular-card__price">115$</b>
-                            <button class="popular-card__button button" type="button">Add to card</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="popular-cards__item popular-card">
-                            <img class="popular-card__image" src="./img/food-items/set-1.png" alt="" width="144"
-                                 height="144">
-                            <div class="popular-card__rating">
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                                <span class="popular-card__star"></span>
-                            </div>
-                            <p class="popular-card__name">Cheeseburger</p>
+                            <p class="popular-card__name">Set Seven</p>
                             <b class="popular-card__price">115$</b>
                             <button class="popular-card__button button" type="button">Add to card</button>
                         </div>
@@ -1214,16 +1217,11 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="reviews__quote-section quote-section">
-                                <p class="quote-section__text quote">EFood has the most intriguing food order system in
-                                    the country.
-                                    UI in both their app and web Is very simple and easy to use, enhancing the UX. Their
-                                    delivery
-                                    men are also quite professional and knows the neighborhood well. Till now, I never
-                                    had to guide
-                                    them to my address for delivery; </p>
+                                <p class="quote-section__text quote">First, I wake up. Then, I get dressed. I walk to school. I do not ride a bike. I do not ride the bus. I like to go to school. It rains. I do not like rain. I eat lunch. I eat a sandwich and an apple.
+                                     </p>
                                 <div class="quote-section__switcher">
                                     <div class="quote-section__author author">
-                                        <p class="author__name"> Angelina Jo</p>
+                                        <p class="author__name"> Bred Petrov</p>
                                         <p class="author__about">Food lover</p>
                                     </div>
                                 </div>
@@ -1231,16 +1229,10 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="reviews__quote-section quote-section">
-                                <p class="quote-section__text quote">EFood has the most intriguing food order system in
-                                    the country.
-                                    UI in both their app and web Is very simple and easy to use, enhancing the UX. Their
-                                    delivery
-                                    men are also quite professional and knows the neighborhood well. Till now, I never
-                                    had to guide
-                                    them to my address for delivery; </p>
+                                <p class="quote-section__text quote">Produce, or the term used to describe fresh fruits and vegetables, is commonly purchased by grocery store shoppers. In terms of fruit, most grocery stores offer bananas, apples, oranges, blackberries, raspberries, grapes, pineapples, cantaloupes, watermelons, and more;  </p>
                                 <div class="quote-section__switcher">
                                     <div class="quote-section__author author">
-                                        <p class="author__name"> Angelina Jo</p>
+                                        <p class="author__name">Christiano Bailando</p>
                                         <p class="author__about">Food lover</p>
                                     </div>
                                 </div>

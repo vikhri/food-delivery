@@ -1,20 +1,104 @@
 .intro {
     margin: 8vw 0;
+
 }
 
-.two-column-block--intro img {
+.intro-illustration {
     order: 2;
+    position: relative;
+
+    &__img {
+
+        object-fit: contain;
+        width: 100%;
 
         @media (max-width: $tablet-xs-width) {
             position: absolute;
-            right: 10px;
+            right: 0;
+            bottom: 0;
 
             width: 50vw;
             height: auto;
 
             opacity: 10%;
         }
+    }
+
+    &__decoration {
+
+        &--blocks {
+
+            &::before {
+                content: "";
+                position: absolute;
+                background-image: url("/src/img/decoration/intro-customer.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 11vw;
+                height: 4vw;
+                right: 32%;
+                top: 40%;
+
+                @media (max-width: $tablet-xs-width) {
+                    display: none;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                background-image: url("/src/img/decoration/intro-sandwich.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 11vw;
+                height: 4vw;
+                right: 5%;
+                top: 56%;
+
+                @media (max-width: $tablet-xs-width) {
+                    display: none;
+                }
+            }
+        }
+
+        &--cubes {
+            &::before {
+                content: "";
+                position: absolute;
+                background-image: url("/src/img/decoration/intro-search.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 7vw;
+                height: 7vw;
+                right: 32%;
+                top: 40%;
+
+                @media (max-width: $tablet-xs-width) {
+                    display: none;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                background-image: url("/src/img/decoration/intro-search.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 7vw;
+                height: 7vw;
+                right: 5%;
+                top: 56%;
+
+                @media (max-width: $tablet-xs-width) {
+                    display: none;
+                }
+            }
+        }
+    }
 }
+
+
+
 
 .button--intro {
     min-width: 12vw;
