@@ -14,17 +14,15 @@
     list-style: none;
 
 
-        @media (max-width: $tablet-xs-width) {
-            grid-template-columns: 1fr 1fr;
-            row-gap: 4vw;
-        }
+    @media (max-width: $tablet-xs-width) {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 4vw;
+    }
 
-        @media (max-width: $mobile-s-width) {
-            grid-template-columns: 80%;
-            justify-content: center;
-        }
-
-
+    @media (max-width: $mobile-s-width) {
+        grid-template-columns: 80%;
+        justify-content: center;
+    }
 
 
 }
@@ -32,7 +30,6 @@
 .restaurant {
     max-width: 360px;
     max-height: 417px;
-
 
     background-color: #ffffff;
     border-radius: 53px 5px 53px 5px;
@@ -44,7 +41,6 @@
     }
 
     &__info {
-
         display: grid;
         grid-template-columns: 65% 35%;
         grid-template-rows: repeat(2, 30px);
@@ -69,7 +65,6 @@
         @media (max-width: $mobile-width) {
             padding: 7%;
         }
-
     }
 
     &__name {
@@ -100,10 +95,7 @@
         }
     }
 
-
-
     &__link {
-
         grid-area: button;
 
         display: flex;
@@ -118,7 +110,5 @@
         text-decoration: none;
         background-color: $secondary-color;
         border-radius: 20px 20px 0 20px;
-
     }
 }
-

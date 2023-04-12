@@ -14,7 +14,6 @@
     line-height: 1.15;
     color: $main-color;
 
-
     &__logo {
         margin-right: auto;
     }
@@ -37,7 +36,6 @@
         margin: -5px 0 0;
 
         &--closed {
-
             width: 30px;
             height: 2px;
             background-color: #000;
@@ -46,7 +44,6 @@
         }
 
         &--open {
-
             position: relative;
             right: 15px;
             bottom: -8px;
@@ -58,8 +55,8 @@
                 height: 2px;
                 background-color: #000;
                 transform: rotate(-45deg);
-
             }
+
             &::after {
                 content: "";
                 position: absolute;
@@ -70,14 +67,10 @@
                 box-shadow: none;
             }
         }
-
     }
-
 }
 
-
 .menu {
-
     position: absolute;
     top: 60px;
     left: 0;
@@ -93,8 +86,6 @@
     padding: 30px 10px 10px 20px;
 
     background-color: white;
-
-
 
     @media (min-width: $tablet-s-width) {
         position: initial;
@@ -113,23 +104,17 @@
         background-color: transparent;
 
         list-style: none;
-
     }
 
     &__item {
         display: block;
 
         &--search {
-
             @media (min-width: $tablet-s-width) {
                 display: none;
-
             }
-
         }
-
-        }
-
+    }
 
     &__link {
         text-decoration: none;
@@ -138,7 +123,6 @@
             color: $secondary-color;
         }
     }
-
 
     &--open {
         display: flex;
@@ -157,13 +141,13 @@
         height: 100%;
 
         list-style: none;
-
-
     }
 
     &__button {
         min-width: 120px;
         min-height: 50px;
+
+        cursor: pointer;
 
         @media (max-width: $tablet-width) {
             display: none;
@@ -173,6 +157,7 @@
             display: block;
             border: none;
             background-color: transparent;
+            cursor: pointer;
 
             @media (min-width: $tablet-width) {
                 display: none;
@@ -182,23 +167,27 @@
 
 
     &__item {
+        cursor: pointer;
 
-    &--cart {
-        position: relative;
-    }
-
-    &--search {
-        @media (max-width: $tablet-xs-width) {
-            display: none;
+        &--cart {
+            position: relative;
         }
-    }
 
+        &--search {
+            @media (max-width: $tablet-xs-width) {
+                display: none;
+            }
+        }
+
+        &:focus,
+        &:active {
+            opacity: 0.5;
+        }
     }
 }
 
 
 .cart-status {
-
     position: absolute;
     right: -6px;
     top: -3px;
@@ -219,16 +208,21 @@
 
 
 .search {
-
     display: flex;
 
     &__button {
-    background-color: transparent;
-    border: none;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
 
-}
+        &:focus,
+        &:active {
+            opacity: 0.5;
+        }
+
+    }
+
     &__input {
-
         border: 1px solid grey;
         border-radius: 30px;
         padding: 1vh;

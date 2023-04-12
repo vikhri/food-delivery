@@ -2,17 +2,16 @@
     margin: 12vw 0;
 
     &__illustration {
+        order: 2;
+
         @media (max-width: $tablet-xs-width) {
             padding-top: 4vh;
             width: 50vw;
             margin: 0 auto;
-            
         }
     }
 }
 
-.two-column-block--app img {
-    order: 2;
-}
+
 
 

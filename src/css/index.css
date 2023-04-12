@@ -1,10 +1,14 @@
 @import url('helpers/variables.css');
 @import url('helpers/normalize.css');
+@import url('helpers/layout.css');
+@import url('helpers/two-column-block.css');
 @import url('helpers/fonts.css');
 @import url('helpers/typo.css');
+@import url('helpers/swiper.css');
+
+@import url('blocks/page.css');
 @import url('blocks/button.css');
 @import url('blocks/header.css');
-@import url('helpers/two-column-block.css');
 @import url('blocks/intro.css');
 @import url('blocks/popular.css');
 @import url('blocks/advantages.css');
@@ -13,42 +17,6 @@
 @import url('blocks/review.css');
 @import url('blocks/subscription.css');
 @import url('blocks/footer.css');
-@import url('helpers/swiper.css');
 
 
 
-
-.page {
-
-
-    padding-top: 50px;
-    padding-bottom: 36px;
-
-    background-color: #f9faff;
-    margin: 0 auto;
-
-    &__header {
-        margin-bottom: 50px;
-    }
-}
-
-.wrapper {
-    padding: 0 9vw;
-    max-width: 1440px;
-    margin: auto;
-
-}
-
-.hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}

@@ -1,5 +1,4 @@
 .two-column-block {
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
@@ -13,7 +12,6 @@
 
     }
 
-
     &__illustration {
         width: 100%;
         object-fit: contain;
@@ -24,18 +22,14 @@
         flex-direction: column;
         gap: 30px;
 
-    @media (max-width: $tablet-xs-width) {
-        align-items: center;
-        padding: 6vw;
+        @media (max-width: $tablet-xs-width) {
+            align-items: center;
+            padding: 6vw;
+        }
     }
-        
-    }
-
-
 }
 
 .description {
-
 
     &__links {
         display: flex;
@@ -47,5 +41,4 @@
         list-style: none;
         text-decoration: none;
     }
-
 }

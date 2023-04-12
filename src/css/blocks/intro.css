@@ -1,6 +1,5 @@
 .intro {
     margin: 8vw 0;
-
 }
 
 .intro-illustration {
@@ -9,8 +8,8 @@
 
     &__img {
 
-        object-fit: contain;
         width: 100%;
+        object-fit: contain;
 
         @media (max-width: $tablet-xs-width) {
             position: absolute;
@@ -31,14 +30,15 @@
             &::before {
                 content: "";
                 position: absolute;
-                background-image: url("/src/img/decoration/intro-customer.png");
-                background-repeat: no-repeat;
-                background-size: contain;
-                width: 11vw;
-                height: 4vw;
                 left: 17%;
                 top: 21%;
 
+                width: 11vw;
+                height: 4vw;
+
+                background-image: url("/src/img/decoration/intro-customer.png");
+                background-repeat: no-repeat;
+                background-size: contain;
 
                 @media (max-width: $tablet-xs-width) {
                     display: none;
@@ -48,13 +48,15 @@
             &::after {
                 content: "";
                 position: absolute;
+                right: -15%;
+                top: 45%;
+
+                width: 11vw;
+                height: 4vw;
+
                 background-image: url("/src/img/decoration/intro-sandwich.png");
                 background-repeat: no-repeat;
                 background-size: contain;
-                width: 11vw;
-                height: 4vw;
-                right: -15%;
-                top: 45%;
 
                 @media (max-width: $tablet-xs-width) {
                     display: none;
@@ -63,16 +65,19 @@
         }
 
         &--cubes {
+
             &::before {
                 content: "";
                 position: absolute;
+                right: 52%;
+                top: 6%;
+
+                width: 4vw;
+                height: 4vw;
+
                 background-image: url("/src/img/decoration/intro-search.png");
                 background-repeat: no-repeat;
                 background-size: contain;
-                width: 4vw;
-                height: 4vw;
-                right: 52%;
-                top: 6%;
 
                 @media (max-width: $tablet-xs-width) {
                     display: none;
@@ -82,13 +87,15 @@
             &::after {
                 content: "";
                 position: absolute;
+                right: 3%;
+                top: 6%;
+
+                width: 4vw;
+                height: 4vw;
+
                 background-image: url("/src/img/decoration/intro-time.png");
                 background-repeat: no-repeat;
                 background-size: contain;
-                width: 4vw;
-                height: 4vw;
-                right: 3%;
-                top: 6%;
 
                 @media (max-width: $tablet-xs-width) {
                     display: none;
@@ -98,14 +105,12 @@
     }
 }
 
-
-
-
 .button--intro {
+
     min-width: 12vw;
     min-height: 50px;
 
-    @media (max-width: $desktop-width) {
+    @media (max-width: $tablet-width) {
         background-color: transparent;
         color: $main-color;
         box-shadow: unset;
@@ -120,16 +125,16 @@
 }
 
 .link--intro {
+
     color: $main-color;
 
-    @media (max-width: $desktop-width) {
+    @media (max-width: $tablet-width) {
         display: flex;
         justify-content: center;
         align-items: center;
 
         min-width: 162px;
         min-height: 50px;
-
 
         color: #ffffff;
         text-decoration: none;

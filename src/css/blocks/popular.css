@@ -1,5 +1,4 @@
 .popular {
-
     margin: 8vw 0;
 
     &__title {
@@ -18,9 +17,7 @@
         align-items: center;
         justify-content: center;
     }
-
 }
-
 
 .popular-filter {
     display: flex;
@@ -39,7 +36,6 @@
     }
 
     &__item {
-
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -56,26 +52,21 @@
         background-color: #ffffff;
         border-radius: 8px;
 
-
         &--current {
             background-color: $secondary-color;
             color: #ffffff;
-
         }
 
         &--current svg path{
             fill: white;
         }
-
     }
-
 
     &__img {
         @media (max-width: $tablet-width) {
             display: none;
         }
     }
-
 }
 
 .popular-cards {
@@ -102,11 +93,6 @@
     text-align: center;
     border-radius: 12px;
 
-
-
-    &__name {
-    }
-
     &__rating {
         display: grid;
         grid-template-columns: repeat(5, 20px);
@@ -118,9 +104,7 @@
         min-width: 5px;
         max-width: 20px;
         height: auto;
-
     }
-
 
     &__image {
         object-fit: contain;
@@ -128,24 +112,22 @@
         @media (max-width: $tablet-s-width) {
             height: 10vw;
         }
-        
     }
 
     &__button {
         min-width: 95px;
+
     }
 }
 
 
 .popular-slider {
-
     position: relative;
 
     display: flex;
     gap: 25px;
     width: 230px;
     height: 40px;
-
 
     &__button {
         display: flex;
@@ -157,6 +139,8 @@
 
         border: none;
         background-color: transparent;
+
+        cursor: pointer;
         
         &--previous {
             rotate: 180deg;
@@ -174,4 +158,3 @@
         border-radius: 50%;
     }
 }
-

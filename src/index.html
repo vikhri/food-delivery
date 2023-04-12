@@ -16,7 +16,7 @@
             <button type="button" class="header-navigation__button">
                 <span class="header-navigation__toggle header-navigation__toggle--closed"></span>
             </button>
-            <img class="header-navigation__logo logo" src="./img/logo/logo.svg" width="102" height="40" alt="logo">
+            <img class="header-navigation__logo logo" src="./img/logo/logo.svg" width="102" height="40" alt="logo" loading="lazy">
             <ul class="header-navigation__menu menu menu--closed">
                 <li class="menu__item">
                     <a class="menu__link" href="">Home</a>
@@ -30,9 +30,10 @@
                 <li class="menu__item">
                     <a class="menu__link" href="">Contract</a>
                 </li>
-                <li class="menu__item--search">
+                <li class="menu__item menu__item--search">
                     <form class="search">
-                        <input class="search__input" type="search">
+                        <label class="search__label hidden" for="search">Поиск</label>
+                        <input class="search__input" name="search" id="search" type="search">
                         <button class="search__button" type="button">
                             <svg class="toolbar__icon" width="24" height="25" viewBox="0 0 24 25" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -49,16 +50,18 @@
                 <ul class="toolbar__list">
                     <li class="toolbar__item toolbar__item--search">
                         <form class="toolbar__search toolbar-search search">
-                            <input class="search__input toolbar-search__input--closed" type="search">
-                            <button class="search__button toolbar-search__button" type="button">
-                                <svg class="toolbar__icon" width="24" height="25" viewBox="0 0 24 25" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <ellipse cx="11.7666" cy="12.4792" rx="8.98856" ry="8.88424" stroke="#363853"
-                                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M18.0183 19.1199L21.5423 22.594" stroke="#363853" stroke-width="1.5"
-                                          stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
+                            <label class="search__label hidden" for="toolbar-search"><label>
+                                <input class="search__input toolbar-search__input--closed" id="toolbar-search"
+                                       name="search" type="search">
+                                <button class="search__button toolbar-search__button" type="button">
+                                    <svg class="toolbar__icon" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <ellipse cx="11.7666" cy="12.4792" rx="8.98856" ry="8.88424" stroke="#363853"
+                                                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.0183 19.1199L21.5423 22.594" stroke="#363853" stroke-width="1.5"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
                         </form>
                     </li>
                     <li class="toolbar__item toolbar__item--cart">
@@ -105,7 +108,7 @@
         <div class="wrapper">
             <div class="two-column-block two-column-block--intro">
                 <div class="two-column-block__illustration two-column-block__illustration--intro intro-illustration">
-                <img class="intro-illustration__img" src="./img/decoration/intro-pic.png" alt="">
+                    <img class="intro-illustration__img" src="./img/decoration/intro-pic.png" alt="Courier" loading="lazy">
                     <span class="intro-illustration__decoration--blocks"></span>
                     <span class="intro-illustration__decoration--cubes"></span>
                 </div>
@@ -275,8 +278,8 @@
                 <div class="swiper-wrapper popular__cards popular-cards">
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
-                            <img class="popular-card__image" src="./img/food-items/burger-1.png" alt="" width="144"
-                                 height="144">
+                            <img class="popular-card__image" src="./img/food-items/burger-1.png" alt="Burger" width="144"
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -292,7 +295,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/burger-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -308,7 +311,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/burger-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -324,7 +327,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/burger-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -340,7 +343,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/burger-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -356,7 +359,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/burger-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -372,7 +375,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/burger-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -388,7 +391,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/burger-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -414,7 +417,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination swiper-food__pagination"></div>
                     <div class="swiper-button-next">
                         <button class="popular-slider__button popular-slider__button--next" type="button">
                             <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
@@ -428,12 +431,12 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-food swiper-food--pizza hidden" >
+            <div class="swiper-food swiper-food--pizza hidden">
                 <div class="swiper-wrapper popular__cards popular-cards">
-                     <div class="swiper-slide">
+                    <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -449,7 +452,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -465,7 +468,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -481,7 +484,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -497,7 +500,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
-                                 height="144">
+                                 height="144 loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -513,7 +516,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -529,7 +532,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -545,7 +548,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -561,7 +564,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/pizza-1.jpg" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -606,7 +609,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/sandwich-1.jpg" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -622,7 +625,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/sandwich-1.jpg" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -638,7 +641,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/sandwich-1.jpg" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -654,7 +657,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/sandwich-1.jpg" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -670,7 +673,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/sandwich-1.jpg" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -686,7 +689,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/sandwich-1.jpg" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -702,7 +705,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/sandwich-1.jpg" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -747,7 +750,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/asian-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -763,7 +766,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/asian-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -779,7 +782,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/asian-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -795,7 +798,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/asian-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -811,7 +814,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/asian-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -827,7 +830,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/asian-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -843,7 +846,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/asian-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -859,7 +862,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/asian-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -904,7 +907,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/set-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -920,7 +923,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/set-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -936,7 +939,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/set-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -952,7 +955,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/set-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -968,7 +971,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/set-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -984,7 +987,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/set-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -1000,7 +1003,7 @@
                     <div class="swiper-slide">
                         <div class="popular-cards__item popular-card">
                             <img class="popular-card__image" src="./img/food-items/set-1.png" alt="" width="144"
-                                 height="144">
+                                 height="144" loading="lazy">
                             <div class="popular-card__rating">
                                 <span class="popular-card__star"></span>
                                 <span class="popular-card__star"></span>
@@ -1046,7 +1049,7 @@
         <div class="wrapper">
             <div class="two-column-block two-column-block--advantages advantages-block">
                 <img class="two-column-block__illustration advantages__illustration " alt=""
-                     src="./img/decoration/advantage-pic.png">
+                     src="./img/decoration/advantage-pic.png" loading="lazy">
                 <div class="two-column-block__description advantages__description description">
                     <h2 class="description__title section-title">Stay at home, we will Provide good food</h2>
                     <p class="description__text">
@@ -1076,7 +1079,7 @@
             <h2 class="restaurants__title section-title">Top Food restaurant</h2>
             <ul class="restaurants__list restaurants-list">
                 <li class="restaurants-list__item restaurant">
-                    <img class="restaurant__image" src="./img/restaurants/blaze.jpg" alt="">
+                    <img class="restaurant__image" src="./img/restaurants/blaze.jpg" alt="" loading="lazy">
                     <div class="restaurant__info">
                         <p class="restaurant__name">Restaurant 1</p>
                         <p class="restaurant__hours">11.00 AM - 10.00 PM</p>
@@ -1090,7 +1093,7 @@
                     </div>
                 </li>
                 <li class="restaurants-list__item restaurant">
-                    <img class="restaurant__image" src="./img/restaurants/blaze.jpg" alt="">
+                    <img class="restaurant__image" src="./img/restaurants/blaze.jpg" alt="" loading="lazy">
                     <div class="restaurant__info">
                         <p class="restaurant__name">Restaurant 1</p>
                         <p class="restaurant__hours">11.00 AM - 10.00 PM</p>
@@ -1104,7 +1107,7 @@
                     </div>
                 </li>
                 <li class="restaurants-list__item restaurant">
-                    <img class="restaurant__image" src="./img/restaurants/blaze.jpg" alt="">
+                    <img class="restaurant__image" src="./img/restaurants/blaze.jpg" alt="" loading="lazy">
                     <div class="restaurant__info">
                         <p class="restaurant__name">Restaurant 1</p>
                         <p class="restaurant__hours">11.00 AM - 10.00 PM</p>
@@ -1118,7 +1121,7 @@
                     </div>
                 </li>
                 <li class="restaurants-list__item restaurant">
-                    <img class="restaurant__image" src="./img/restaurants/blaze.jpg" alt="">
+                    <img class="restaurant__image" src="./img/restaurants/blaze.jpg" alt="" loading="lazy">
                     <div class="restaurant__info">
                         <p class="restaurant__name">Restaurant 1</p>
                         <p class="restaurant__hours">11.00 AM - 10.00 PM</p>
@@ -1132,7 +1135,7 @@
                     </div>
                 </li>
                 <li class="restaurants-list__item restaurant">
-                    <img class="restaurant__image" src="./img/restaurants/blaze.jpg" alt="">
+                    <img class="restaurant__image" src="./img/restaurants/blaze.jpg" alt="" loading="lazy">
                     <div class="restaurant__info">
                         <p class="restaurant__name">Restaurant 1</p>
                         <p class="restaurant__hours">11.00 AM - 10.00 PM</p>
@@ -1146,7 +1149,7 @@
                     </div>
                 </li>
                 <li class="restaurants-list__item restaurant">
-                    <img class="restaurant__image" src="./img/restaurants/blaze.jpg" alt="">
+                    <img class="restaurant__image" src="./img/restaurants/blaze.jpg" alt="" loading="lazy">
                     <div class="restaurant__info">
                         <p class="restaurant__name">Restaurant 1</p>
                         <p class="restaurant__hours">11.00 AM - 10.00 PM</p>
@@ -1164,9 +1167,9 @@
     </section>
     <section class="app">
         <div class="wrapper">
-            <div class="two-column-block two-column-block--app">
+            <div class="two-column-block two-column-block--app ">
                 <img class="two-column-block__illustration two-column-block__illustration--app app__illustration "
-                     alt="" src="./img/decoration/app.png">
+                     alt="" src="./img/decoration/app.png" loading="lazy">
                 <div class="two-column-block__description two-column-block__description--app description">
                     <h2 class="description__title section-title">Download our mobile app</h2>
                     <p class="description__text">
@@ -1177,13 +1180,13 @@
                         <li class="description__item description__item--app">
                             <a class="description__link" href="">
                                 <img class="button--googleplay" alt="google play store" width="120" height="40"
-                                     src="img/icons/appstore.svg">
+                                     src="img/icons/appstore.svg" loading="lazy">
                             </a>
                         </li>
                         <li class="description__item description__item--app">
                             <a class="description__link" href="">
                                 <img class="button--googleplay" alt="google play store" width="135" height="40"
-                                     src="img/icons/google-play.svg">
+                                     src="img/icons/google-play.svg" loading="lazy">
                             </a>
                         </li>
                     </ul>
@@ -1195,8 +1198,8 @@
         <div class="wrapper">
             <h2 class="section-title reviews__title">What Our Client Are Saying </h2>
             <div class="reviews__content">
-                <img class="reviews__photo" alt="" width="660" height="660" src="./img/review-authors/angelina.png">
-                <div class="swiper mySwiper">
+                <img class="reviews__photo" alt="" width="660" height="660" src="./img/review-authors/angelina.png" loading="lazy">
+                <div class="swiper reviewSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="reviews__quote-section quote-section">
@@ -1217,8 +1220,10 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="reviews__quote-section quote-section">
-                                <p class="quote-section__text quote">First, I wake up. Then, I get dressed. I walk to school. I do not ride a bike. I do not ride the bus. I like to go to school. It rains. I do not like rain. I eat lunch. I eat a sandwich and an apple.
-                                     </p>
+                                <p class="quote-section__text quote">First, I wake up. Then, I get dressed. I walk to
+                                    school. I do not ride a bike. I do not ride the bus. I like to go to school. It
+                                    rains. I do not like rain. I eat lunch. I eat a sandwich and an apple.
+                                </p>
                                 <div class="quote-section__switcher">
                                     <div class="quote-section__author author">
                                         <p class="author__name"> Bred Petrov</p>
@@ -1229,7 +1234,10 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="reviews__quote-section quote-section">
-                                <p class="quote-section__text quote">Produce, or the term used to describe fresh fruits and vegetables, is commonly purchased by grocery store shoppers. In terms of fruit, most grocery stores offer bananas, apples, oranges, blackberries, raspberries, grapes, pineapples, cantaloupes, watermelons, and more;  </p>
+                                <p class="quote-section__text quote">Produce, or the term used to describe fresh fruits
+                                    and vegetables, is commonly purchased by grocery store shoppers. In terms of fruit,
+                                    most grocery stores offer bananas, apples, oranges, blackberries, raspberries,
+                                    grapes, pineapples, cantaloupes, watermelons, and more; </p>
                                 <div class="quote-section__switcher">
                                     <div class="quote-section__author author">
                                         <p class="author__name">Christiano Bailando</p>
@@ -1240,28 +1248,28 @@
                         </div>
                     </div>
                     <div class="review-swiper-buttons">
-                    <div class="review-swiper-button-next swiper-button-next">
-                        <button class="quote-buttons__next" type="button">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 16H27" stroke="#FF7a50" stroke-width="2" stroke-linecap="round"
-                                      stroke-linejoin="round"/>
-                                <path d="M18 7L27 16L18 25" stroke="#FF7A50" stroke-width="2" stroke-linecap="round"
-                                      stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="review-swiper-button-prev swiper-button-prev">
-                        <button class="quote-buttons__previous" type="button">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M27 16H5" stroke="#FF7a50" stroke-width="2" stroke-linecap="round"
-                                      stroke-linejoin="round"/>
-                                <path d="M14 7L5 16L14 25" stroke="#FF7a50" stroke-width="2" stroke-linecap="round"
-                                      stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                    </div>
+                        <div class="review-swiper-button-next swiper-button-next">
+                            <button class="quote-buttons__next" type="button">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 16H27" stroke="#FF7a50" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M18 7L27 16L18 25" stroke="#FF7A50" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="review-swiper-button-prev swiper-button-prev">
+                            <button class="quote-buttons__previous" type="button">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27 16H5" stroke="#FF7a50" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M14 7L5 16L14 25" stroke="#FF7a50" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1297,7 +1305,7 @@
         <div class="footer__navigation footer-navigation">
             <div class="footer-navigation__contacts contacts">
                 <a class="contacts__link"><img class="footer-navigation__logo logo" src="./img/logo/logo.svg"
-                                               width="102" height="40" alt=""></a>
+                                               width="102" height="40" alt="" loading="lazy"></a>
                 <p class="contacts__address">Dhaka, Bangladesh</p>
                 <p class="contacts__phone">0998989790</p>
                 <p class="contacts__email">support@efood.com</p>
@@ -1438,6 +1446,5 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="index.js" type="module"></script>
-
 </body>
 </html>

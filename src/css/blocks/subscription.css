@@ -18,7 +18,7 @@
             padding: 5vw;
 
         }
-     }
+    }
 
     &__title {
         margin-bottom: 12px;
@@ -27,8 +27,6 @@
         font-size: 40px;
 
         @mixin fluid-text 40, 18;
-
-
     }
 
     &__text {
@@ -38,9 +36,7 @@
         line-height: 1.9;
 
         opacity: 80%;
-
     }
-
 }
 
 .subscription-form {
@@ -64,7 +60,6 @@
     }
 
     input {
-
         &:focus,
         &:hover {
             outline: 2px solid $secondary-color;
@@ -80,11 +75,9 @@
         border-radius: 70px;
 
         @mixin fluid-text 20, 10;
-
     }
 
     &__button {
-
         height: 95%;
         padding-left: 15%;
 
@@ -94,20 +87,17 @@
         background-size: 14px;
         border-radius: 70px;
 
-
         @media (max-width: $tablet-xs-width) {
             display: none;
         }
 
-
         &--mobile {
             height: 95%;
-            border-radius: 70px ;
+            border-radius: 70px;
 
             @media (min-width: $tablet-xs-width) {
                 display: none;
-
             }
         }
-
-}}
+    }
+}

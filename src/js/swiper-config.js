@@ -1,17 +1,14 @@
 const swiperFood = new Swiper('.swiper-food', {
-    // Optional parameters
+
     direction: 'horizontal',
     loop: false,
     slidesPerView: 5,
     spaceBetween: 25,
 
-
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
     },
 
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -42,8 +39,7 @@ const swiperFood = new Swiper('.swiper-food', {
 
 });
 
-
-const mySwiper = new Swiper(".mySwiper", {
+const reviewSwiper = new Swiper(".reviewSwiper", {
     cssMode: true,
     navigation: {
         nextEl: ".swiper-button-next",

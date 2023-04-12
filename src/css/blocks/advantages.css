@@ -2,23 +2,22 @@
     margin: 8vw 0;
 
     &__illustration {
-
         @media (max-width: $tablet-xs-width) {
             position: absolute;
             right: 10px;
+
             width: 50vw;
             height: auto;
+
             opacity: 0.1;
         }
     }
-
 
     &__description {
         @media (max-width: $tablet-xs-width) {
             align-items: center;
         }
     }
-
 }
 
 .advantages-block {
@@ -29,8 +28,6 @@
     }
 }
 
-
-
 .advantages-list {
     padding-bottom: 30px;
 
@@ -40,9 +37,10 @@
     list-style: none;
 
     &__item {
-        min-height: 30px;
         padding-left: 56px;
         margin-bottom: 25px;
+
+        min-height: 30px;
 
         text-transform: capitalize;
 
@@ -53,15 +51,16 @@
         &--men {
             @mixin icon delivery;
         }
+
         &--restaurants {
             @mixin icon restaurant;
         }
     }
 }
 
-
 .button--advantages {
     min-width: 176px;
     min-height: 58px;
+
     border-radius: 30px 30px 1px 30px;
 }

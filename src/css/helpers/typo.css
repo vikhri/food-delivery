@@ -1,7 +1,6 @@
 @define-mixin main-font {
     font-family: 'Rubik', 'Arial', sans-serif;
     color: $main-color;
-
 }
 
 .page {
