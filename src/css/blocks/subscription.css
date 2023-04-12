@@ -3,7 +3,7 @@
 
     &__content {
         min-height: 312px;
-        padding: 5vw 15vw 5vw;
+        padding: 10vh 15vh 10vh;
 
         background-image: url("./../img/decoration/subscribe-background.png");
         background-size: cover;
@@ -15,8 +15,12 @@
 
         @media (max-width: $tablet-width) {
             min-height: 200px;
-            padding: 5vw;
+            padding: 5vh;
+        }
 
+        @media (max-width: $mobile-s-width) {
+            min-height: 200px;
+            padding: 2vh;
         }
     }
 
@@ -52,6 +56,7 @@
 
     @media (max-width: $tablet-xs-width) {
         height: auto;
+        padding: 2%;
     }
 
     label {
@@ -60,6 +65,13 @@
     }
 
     input {
+
+        @media (max-width: $mobile-width) {
+            &::placeholder {
+                color: #ffffff;
+            }
+        }
+
         &:focus,
         &:hover {
             outline: 2px solid $secondary-color;
