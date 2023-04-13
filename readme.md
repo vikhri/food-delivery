@@ -1,0 +1,1 @@
+Ссылка на demo в github pages: https://vikhri.github.io/food-delivery/
