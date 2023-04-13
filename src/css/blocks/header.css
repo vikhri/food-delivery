@@ -250,8 +250,7 @@
     &__input {
 
         max-width: 200px;
-        padding-left: 20px;
-        padding: 6px;
+        padding: 6px 20px;
 
         &--closed {
             display: none;
