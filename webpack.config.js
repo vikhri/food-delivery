@@ -20,8 +20,9 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
-        filename: 'main.[contenthash].footer-menu-toggle.js',
-        assetModuleFilename: "assets/[name].[ext]"
+        filename: '[name].[hash:8].js',
+        sourceMapFilename: '[name].[hash:8].map',
+        assetModuleFilename: "assets/[name].[hash:8][ext]"
 
     },
     plugins: [
@@ -38,6 +39,10 @@ module.exports = {
             {
                 test: /\.html$/i,
                 loader: "html-loader",
+                options: {
+                    minimize: false,
+
+                },
             },
             {
                 test: /\.css$/i,
@@ -113,11 +118,5 @@ module.exports = {
             },
 
         ]
-    },
-    watch: true,
-    watchOptions: {
-        aggregateTimeout: 100,
-        poll: 1000,
-        ignored: '**/node_modules',
     },
 }
