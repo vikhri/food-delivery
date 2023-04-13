@@ -96,7 +96,7 @@
         align-items: center;
         justify-content: flex-end;
         row-gap: 15px;
-        column-gap: 60px;
+        column-gap: 3vh;
         width: inherit;
         height: inherit;
         padding: 0;
@@ -132,12 +132,12 @@
 
 .toolbar {
 
+
     &__list {
         display: flex;
         flex-direction: row;
-        gap: 4vw;
+        gap: 4vh;
         align-items: center;
-        max-width: 290px;
         height: 100%;
 
         list-style: none;
@@ -248,6 +248,11 @@
 .toolbar-search {
 
     &__input {
+
+        max-width: 200px;
+        padding-left: 20px;
+        padding: 6px;
+
         &--closed {
             display: none;
         }
