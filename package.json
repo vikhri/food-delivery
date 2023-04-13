@@ -37,5 +37,6 @@
     "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.2",
     "swiper": "^9.1.1"
-  }
+  },
+  "sideEffects": true
 }
