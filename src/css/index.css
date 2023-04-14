@@ -1,5 +1,6 @@
+@import url('normalize.css/normalize.css');
+
 @import url('helpers/variables.css');
-@import url('helpers/normalize.css');
 @import url('helpers/layout.css');
 @import url('helpers/two-column-block.css');
 @import url('helpers/fonts.css');
