@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    &,
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+
 .wrapper {
     padding: 0 9vw;
     max-width: 1440px;
