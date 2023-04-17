@@ -145,8 +145,6 @@
         min-width: 120px;
         min-height: 50px;
 
-        cursor: pointer;
-
         @media (max-width: $tablet-width) {
             display: none;
         }
