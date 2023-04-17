@@ -4,8 +4,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    column-gap: 4vh;
-    row-gap: 15px;
+    gap: 15px 4vh;
     width: 100%;
     min-height: 50px;
 
@@ -95,8 +94,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: flex-end;
-        row-gap: 15px;
-        column-gap: 8vh;
+        gap: 15px 8vh;
         width: inherit;
         height: inherit;
         padding: 0;

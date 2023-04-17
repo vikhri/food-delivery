@@ -48,8 +48,7 @@
                 "title title"
                 "hours button";
         align-items: baseline;
-        row-gap: 10px;
-        column-gap: 1vw;
+        gap: 10px 1vw;
         padding: 20px;
 
         @media (max-width: $tablet-width) {
