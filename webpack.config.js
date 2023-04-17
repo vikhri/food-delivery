@@ -21,7 +21,6 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
         filename: '[name].[hash:8].js',
-        sourceMapFilename: '[name].[hash:8].map',
         assetModuleFilename: "assets/[name].[hash:8][ext]"
 
     },
