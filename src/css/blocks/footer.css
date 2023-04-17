@@ -196,6 +196,12 @@
     @mixin fluid-text 16, 14;
     line-height: 1.25;
 
+    &__info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
     &__link {
         margin-bottom: 5px;
     }
