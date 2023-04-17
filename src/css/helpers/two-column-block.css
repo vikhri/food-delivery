@@ -20,7 +20,7 @@
     &__description {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        row-gap: 30px;
 
         @media (max-width: $tablet-xs-width) {
             align-items: center;
