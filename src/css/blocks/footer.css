@@ -58,6 +58,22 @@
         border-radius: 50%;
         background-color: #eeeeef;
     }
+
+    &__link {
+
+        &:hover,
+        &:focus {
+         svg path {
+             fill: #9e9e9e;
+         }
+        }
+
+        &:active {
+            svg path {
+                fill: #666666;
+            }
+        }
+    }
 }
 
 .sitemap-category {
@@ -95,6 +111,13 @@
     &__link {
         text-decoration: none;
         color: inherit;
+
+        &:hover,
+        &:focus,
+        &:active {
+            opacity: 0.6;
+        }
+
     }
 
     &__toggle {
@@ -189,6 +212,12 @@
 
     &__link {
         text-decoration: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+            opacity: 0.6;
+        }
     }
 }
 
