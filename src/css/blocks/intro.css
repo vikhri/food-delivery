@@ -30,7 +30,7 @@
 
         @media (max-width: $tablet-width) {
             background-color: transparent;
-            color: $main-color;
+            color: var(--main-color);
             box-shadow: unset;
             text-decoration: underline;
 
@@ -44,7 +44,7 @@
 
         &--transparent {
 
-            color: $main-color;
+            color: var(--main-color);
             background-color: transparent;
             box-shadow: none;
             text-decoration: underline;
@@ -66,18 +66,18 @@
                 color: #ffffff;
                 text-decoration: none;
 
-                background-color: $secondary-color;
+                background-color: var(--secondary-color);
                 border: none;
                 border-radius: 5px;
                 box-shadow: 0 22px 40px 0 rgba(255, 104, 56, 0.19);
 
                 &:hover,
                 &:focus {
-                    background-color: $secondary-lighten;
+                    background-color: var(--secondary-lighten);
                 }
 
                 &:active {
-                    background-color: $secondary-darken;
+                    background-color: var(--secondary-darken);
                 }
             }
 

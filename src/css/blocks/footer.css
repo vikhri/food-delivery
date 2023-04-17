@@ -114,7 +114,7 @@
                 bottom: 1px;
                 height: 3px;
                 width: 80%;
-                background-color: $secondary-color;
+                background-color: var(--secondary-color);
                 content: "";
                 transform: translateX(5px) rotate(45deg);
                 transform-origin: left bottom;
@@ -126,7 +126,7 @@
                 bottom: 1px;
                 height: 3px;
                 width: 80%;
-                background-color: $secondary-color;
+                background-color: var(--secondary-color);
                 content: "";
                 transform: translateX(5px) rotate(-45deg);
                 transform-origin: right bottom;
@@ -140,7 +140,7 @@
                 bottom: -1px;
                 height: 3px;
                 width: 80%;
-                background-color: $secondary-color;
+                background-color: var(--secondary-color);
                 content: "";
                 transform: translateX(5px) rotate(-45deg);
                 transform-origin: left bottom;
@@ -152,7 +152,7 @@
                 bottom: -1px;
                 height: 3px;
                 width: 80%;
-                background-color: $secondary-color;
+                background-color: var(--secondary-color);
                 content: "";
                 transform: translateX(5px) rotate(45deg);
                 transform-origin: right bottom;

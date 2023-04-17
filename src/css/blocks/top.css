@@ -108,7 +108,7 @@
         color: white;
 
         text-decoration: none;
-        background-color: $secondary-color;
+        background-color: var(--secondary-color);
         border-radius: 20px 20px 0 20px;
     }
 }

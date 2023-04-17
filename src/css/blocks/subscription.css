@@ -74,7 +74,7 @@
 
         &:focus,
         &:hover {
-            outline: 2px solid $secondary-color;
+            outline: 2px solid var(--secondary-color);
         }
     }
 

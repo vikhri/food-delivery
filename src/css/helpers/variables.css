@@ -1,10 +1,12 @@
 /* font-colors */
+:root {
+    --main-color: #363853;
+    --secondary-color: #FF7a50;
+    --light-color: #aaaaaa;
+    --secondary-lighten: lighten(#FF7a50, 7%);
+    --secondary-darken: darken(#FF7a50, 7%);
+}
 
-$main-color: #363853;
-$secondary-color: #FF7a50;
-$light-color: #aaaaaa;
-$secondary-lighten: lighten($secondary-color, 7%);
-$secondary-darken: darken($secondary-color, 7%);
 
 /*screen width: */
 
@@ -29,7 +31,7 @@ $mobile-s-width: 360px;
 
     width: 32px;
     height: 32px;
-    content:"";
+    content: "";
     background-image: url("./../img/icons/quotes.svg");
     background-repeat: no-repeat;
 }

@@ -47,13 +47,13 @@
         max-width: 210px;
         min-height: 5vh;
 
-        color: $main-color;
+        color: var(--main-color);
 
         background-color: #ffffff;
         border-radius: 8px;
 
         &--current {
-            background-color: $secondary-color;
+            background-color: var(--secondary-color);
             color: #ffffff;
         }
 
