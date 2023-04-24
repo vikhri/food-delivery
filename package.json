@@ -37,7 +37,7 @@
     "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.2",
     "normalize.css": "^8.0.1",
-    "swiper": "^9.1.1"
+    "swiper": "^9.2.4"
   },
   "sideEffects": true
 }

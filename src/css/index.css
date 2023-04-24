@@ -1,4 +1,6 @@
 @import url('normalize.css/normalize.css');
+@import url(swiper/swiper-bundle.css);
+@import url(swiper/swiper.css);
 
 @import url('helpers/variables.css');
 @import url('helpers/layout.css');

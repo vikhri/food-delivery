@@ -86,6 +86,8 @@
 
     background-color: white;
 
+
+
     @media (min-width: $tablet-s-width) {
         position: initial;
 
@@ -116,6 +118,7 @@
 
     &__link {
         text-decoration: none;
+         color: inherit;
 
         &:hover {
             color: var(--secondary-color);

@@ -1,3 +1,6 @@
+import Swiper, {Navigation, Pagination} from "swiper";
+
+
 const swiperFood = new Swiper('.swiper-food', {
 
     direction: 'horizontal',
@@ -5,6 +8,7 @@ const swiperFood = new Swiper('.swiper-food', {
     slidesPerView: 5,
     spaceBetween: 25,
 
+    modules: [Navigation, Pagination],
     pagination: {
         el: '.swiper-pagination',
     },
@@ -41,6 +45,7 @@ const swiperFood = new Swiper('.swiper-food', {
 
 const reviewSwiper = new Swiper(".reviewSwiper", {
     cssMode: true,
+    modules: [Navigation, Pagination],
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
