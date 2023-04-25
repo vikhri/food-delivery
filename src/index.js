@@ -6,3 +6,4 @@ import './js/swiper-config';
 import './js/food-filter';
 
 
+import './js/search'

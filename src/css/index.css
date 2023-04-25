@@ -12,6 +12,7 @@
 @import url('blocks/page.pcss');
 @import url('blocks/button.pcss');
 @import url('blocks/header.pcss');
+@import url('blocks/quicksearch.pcss');
 @import url('blocks/intro.pcss');
 @import url('blocks/popular.pcss');
 @import url('blocks/advantages.pcss');
