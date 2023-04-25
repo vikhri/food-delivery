@@ -2,24 +2,24 @@
 @import url(swiper/swiper-bundle.css);
 @import url(swiper/swiper.css);
 
-@import url('helpers/variables.css');
-@import url('helpers/layout.css');
-@import url('helpers/two-column-block.css');
-@import url('helpers/fonts.css');
-@import url('helpers/typo.css');
-@import url('helpers/swiper.css');
+@import url('helpers/variables.pcss');
+@import url('helpers/layout.pcss');
+@import url('helpers/two-column-block.pcss');
+@import url('helpers/fonts.pcss');
+@import url('helpers/typo.pcss');
+@import url('helpers/swiper.pcss');
 
-@import url('blocks/page.css');
-@import url('blocks/button.css');
-@import url('blocks/header.css');
-@import url('blocks/intro.css');
-@import url('blocks/popular.css');
-@import url('blocks/advantages.css');
-@import url('blocks/top.css');
-@import url('blocks/app.css');
-@import url('blocks/review.css');
-@import url('blocks/subscription.css');
-@import url('blocks/footer.css');
+@import url('blocks/page.pcss');
+@import url('blocks/button.pcss');
+@import url('blocks/header.pcss');
+@import url('blocks/intro.pcss');
+@import url('blocks/popular.pcss');
+@import url('blocks/advantages.pcss');
+@import url('blocks/top.pcss');
+@import url('blocks/app.pcss');
+@import url('blocks/review.pcss');
+@import url('blocks/subscription.pcss');
+@import url('blocks/footer.pcss');
 
 
 
