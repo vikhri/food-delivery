@@ -32,18 +32,19 @@ const initQuickSearch = () => {
     resultNode.innerHTML = ''
 
     if (hasItems) {
-      const itemsMarkup = items.map(({ label, href }) => `
+      const itemsMarkup = items.slice(0, 9).map(({title, id}) => `
         <li class="quick-search__result-item">
-          <a class="quick-search__result-link" href="${href}">
-            ${label}
+          <a class="quick-search__result-link" href="/${id}">
+            ${title}
           </a>
         </li>
       `).join('')
 
       const markup = `<ul class="quick-search__result-list">${itemsMarkup}</ul>`
 
-      resultNode.innerHTML = markup
+      resultNode.innerHTML = markup;
     }
+
   }
 
   toggleMenuButtonNode.addEventListener('click', () => {
@@ -55,15 +56,22 @@ const initQuickSearch = () => {
     event.preventDefault()
   })
 
-  inputNode.addEventListener('input', ({ target }) => {
-    const { value } = target
+  inputNode.addEventListener('input', ({target}) => {
+    const {value} = target
     const cleanValue = value.trim()
-    const urlFormatted = `${BASE_URL}&query=${cleanValue}`
+    const urlFormatted = `${BASE_URL}?title_like=${cleanValue}`
 
-    fetch(urlFormatted).then((response) => {
-      console.log(response)
-      manageResult(response.items)
-    })
+    if (cleanValue.length < 1) {
+      manageResult([]);
+      return
+    }
+
+    fetch(urlFormatted)
+      .then((response) => response.json())
+      .then((json) => {
+        manageResult(json);
+      });
+
   })
 }
 
